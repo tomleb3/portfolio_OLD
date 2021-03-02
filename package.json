@@ -1,6 +1,6 @@
 {
   "homepage": "https://tomleb3.github.io/portfolio",
-  "name": "react-cli-template",
+  "name": "tom-leb-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,6 @@
     "emailjs-com": "^2.6.4",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
-    "react-bootstrap": "^1.5.0",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "react-redux": "^7.2.2",
