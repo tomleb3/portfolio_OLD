@@ -1,12 +1,12 @@
 .contact-cta {
-    background-color: #c97e81;
+    background-color: $clr2;
     color: white;
     min-height: 170px;
     padding: 1rem;
     border-radius: 12px;
     margin-block-end: -6rem;
     position: relative;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #c97e81;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px $clr2;
 
     * {
         padding-block-start: 5px;

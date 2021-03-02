@@ -52,7 +52,7 @@
             height: 50px;
         }
         a {
-            color: #13acca;
+            color: $clr2;
             display: inline-block;
             font-size: small;
             &:not(:last-of-type) {

@@ -50,7 +50,7 @@ export const ContactMe = () => {
             </div>
             <div>
                 <label htmlFor="senderEmail">Email</label>
-                <input type="text" name="senderEmail" value={senderEmail} onChange={handleChange} />
+                <input type="email" name="senderEmail" value={senderEmail} onChange={handleChange} />
             </div>
         </div>
         <div>
