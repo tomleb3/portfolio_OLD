@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.08921404.chunk.css",
-    "main.js": "/portfolio/static/js/main.7bec1bdb.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7bec1bdb.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.0ebc550d.chunk.css",
+    "main.js": "/portfolio/static/js/main.7f3608c7.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7f3608c7.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.6fe11d6f.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.6fe11d6f.js.map",
     "static/js/2.3f98699c.chunk.js": "/portfolio/static/js/2.3f98699c.chunk.js",
@@ -12,14 +12,14 @@
     "index.html": "/portfolio/index.html",
     "service-worker.js": "/portfolio/service-worker.js",
     "service-worker.js.map": "/portfolio/service-worker.js.map",
-    "static/css/main.08921404.chunk.css.map": "/portfolio/static/css/main.08921404.chunk.css.map",
+    "static/css/main.0ebc550d.chunk.css.map": "/portfolio/static/css/main.0ebc550d.chunk.css.map",
     "static/js/2.3f98699c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3f98699c.chunk.js.LICENSE.txt",
     "static/media/global.scss": "/portfolio/static/media/OpenSans-SemiBoldItalic.63afadba.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.6fe11d6f.js",
     "static/js/2.3f98699c.chunk.js",
-    "static/css/main.08921404.chunk.css",
-    "static/js/main.7bec1bdb.chunk.js"
+    "static/css/main.0ebc550d.chunk.css",
+    "static/js/main.7f3608c7.chunk.js"
   ]
 }
