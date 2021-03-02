@@ -1,0 +1,22 @@
+.introduction {
+    background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(117,16,247,1) 100%);
+
+    .content {
+        padding: 7rem 1.5rem 14rem;
+        text-align: center;
+        color: white;
+        h3 {
+            font-size: 2em;
+            font-family: nunito;
+            margin-block-end: 1.5rem;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        @media (max-width: $narrow-breakpoint) {
+            padding: 5rem 1.5rem 10rem;
+        }
+    }
+}

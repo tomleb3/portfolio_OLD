@@ -1,0 +1,43 @@
+.hero {
+    margin-block-start: 30px;
+    padding-top: 2rem;
+    text-align: center;
+    * {
+        margin: auto;
+        display: block;
+        width: fit-content;
+    }
+    strong,
+    p {
+        margin-block-end: 1.5rem;
+        font-weight: 300;
+    }
+    strong {
+        font-size: 3em;
+        font-family: nunito;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    .avatar {
+        width: 210px;
+        margin: 6rem auto;
+    }
+
+    @media (max-width: $normal-breakpoint) {
+        * {
+            width: fill-available;
+        }
+        strong {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.25em;
+        }
+    }
+    @media (max-width: $narrow-breakpoint) {
+        strong {
+            font-size: 2em;
+        }
+    }
+}

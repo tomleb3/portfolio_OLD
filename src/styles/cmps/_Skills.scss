@@ -1,0 +1,38 @@
+.skills {
+    border-radius: 12px;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+    margin-block-start: -8rem;
+    background-color: white;
+
+    img {
+        height: 48px;
+    }
+    p {
+        margin-block-end: 5rem !important;
+    }
+    label {
+        color: $clr2;
+    }
+    span {
+        font-size: 0.9em;
+    }
+    div {
+        width: 33.3%;
+        text-align: center;
+        padding: 70px 45px;
+        &:not(:last-of-type) {
+            border-bottom: 0px solid #e6ecf8;
+            border-right: 1px solid #e6ecf8;
+        }
+        * {
+            margin-block-end: 1.5rem;
+        }
+    }
+
+    @media (max-width: $normal-breakpoint) {
+        flex-direction: column;
+        div {
+            width: 100%;
+        }
+    }
+}

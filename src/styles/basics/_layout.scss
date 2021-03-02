@@ -1,0 +1,12 @@
+.main-layout {
+    max-width: 80%;
+    margin: 0 auto;
+    transition: max-width 0.5s;
+
+    // @media (max-width: $narrow-breakpoint) {
+    //     max-width: $narrow-breakpoint - 250px;
+    // }
+    // @media (max-width: $mobile-breakpoint) {
+    //     max-width: $mobile-breakpoint - 250px;
+    // }
+}

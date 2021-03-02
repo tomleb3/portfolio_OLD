@@ -1,0 +1,18 @@
+.recent-work {
+    padding: 9rem 1rem 0;
+    & > {
+        strong,
+        p {
+            font-weight: 300;
+            margin-block-end: 1.5rem;
+            display: block;
+        }
+        strong {
+            font-size: 2em;
+            font-family: nunito;
+        }
+        p {
+            font-size: 1.25em;
+        }
+    }
+}

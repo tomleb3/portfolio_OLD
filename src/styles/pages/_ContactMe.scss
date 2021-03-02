@@ -1,0 +1,77 @@
+.contact-me {
+    margin-block-start: 75px;
+    p {
+        font-family: nunito;
+        font-size: 3em;
+        text-align: center;
+        word-break: break-word;
+        margin: auto;
+        margin-block-end: 75px;
+    }
+    label {
+        font-weight: 300;
+        font-size: 1.15em;
+        display: block;
+    }
+    input {
+        width: 100%;
+    }
+    textarea {
+        resize: vertical;
+        width: 100%;
+        min-height: 200px;
+    }
+    input,
+    textarea {
+        border-radius: 4px;
+        border: 1px solid #e6ecf8;
+        color: #141c3a;
+        font-weight: 300;
+        box-shadow: none;
+        font-size: 1.25em;
+        padding: 10px 15px;
+        font-family: inherit;
+    }
+    > div {
+        > div {
+            width: 48%;
+        }
+        &:first-of-type {
+            margin-block-end: 1.5rem;
+        }
+        &:last-of-type {
+            margin-block-end: 3rem;
+        }
+    }
+    button {
+        display: block;
+        margin: auto;
+        margin-block-end: 5rem;
+        font-size: 2rem;
+        font-weight: 300;
+        border: none;
+        background-color: transparent;
+        color: $clr2;
+        transition: transform 0.1s;
+        &:hover {
+            transform: scale(1.03);
+        }
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+    @media (max-width: $narrow-breakpoint) {
+        > div {
+            > div {
+                width: 100%;
+            }
+            &:first-of-type {
+                flex-direction: column;
+            }
+        }
+    }
+    @media (min-width: $normal-breakpoint){
+        max-width: 650px;
+    }
+}

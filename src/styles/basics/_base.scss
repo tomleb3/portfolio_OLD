@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+    html {
+        scroll-behavior: smooth;
+        text-rendering: optimizeLegibility;
+    }
+    
+    body {
+        overflow-x: hidden;
+        font-family: open-sans;
+        background-color: #F5F5F5;
+
+        button {
+            cursor: pointer;
+            outline: none;
+        }
+
+        input,
+        textarea {
+            caret-color: $clr1;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+    }
+}

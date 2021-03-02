@@ -1,0 +1,22 @@
+.app-header {
+    background-color: transparent;
+    z-index: 10;
+
+    section {
+        padding: 10px 0;
+        a {
+            .logo {
+                height: 70px;
+            }
+        }
+        nav {
+            .active-link {
+               text-decoration: underline;
+               text-decoration-color: $clr1;
+            }
+            *:not(:last-child) {
+                margin-inline-end: 25px;
+            }
+        }
+    }
+}
