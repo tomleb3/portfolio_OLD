@@ -4,15 +4,18 @@ import { Skills } from '../cmps/Skills'
 import { RecentWork } from '../cmps/RecentWork'
 import { ContactCTA } from '../cmps/ContactCTA'
 import { EarlyWork } from '../cmps/EarlyWork'
+import { workService } from '../services/workService'
 
 export const Home = () => {
+
+    let works = workService.query()
 
     return <main className="home">
         <Hero />
         <Introduction />
         <Skills />
-        <RecentWork />
-        <EarlyWork />
+        <RecentWork works={works} />
+        <EarlyWork works={works} />
         <ContactCTA />
     </main>
 }

@@ -22,14 +22,16 @@
                 transform: translate(-50%, -50%);
             }
         }
-        &:hover {
-            img {
-                &:first-of-type {
-                    opacity: 0.3;
-                    filter: blur(2px);
-                }
-                &:last-of-type {
-                    display: inline-block;
+        @media (min-width: $normal-breakpoint) {
+            &:hover {
+                img {
+                    &:first-of-type {
+                        opacity: 0.3;
+                        filter: blur(2px);
+                    }
+                    &:last-of-type {
+                        display: inline-block;
+                    }
                 }
             }
         }

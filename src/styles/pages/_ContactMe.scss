@@ -43,7 +43,7 @@
             margin-block-end: 3rem;
         }
     }
-    button {
+    .btn-submit {
         display: block;
         margin: auto;
         margin-block-end: 5rem;
@@ -59,6 +59,28 @@
         &:active {
             transform: scale(0.98);
         }
+        &.submitting {
+            color: lightgray;
+            &::after {
+                content: "ting";
+            }
+        }
+    }
+
+    .Toastify__toast {
+        font-size: 1.7em;
+        font-family: nunito;
+        padding: 1.2rem;
+        width: fit-content;
+        &-body{
+        margin-inline-end: 1.25rem;
+        }
+        &--success {
+            background-color: #7cc18d;
+        }
+        &--error {
+            background-color: $clr1;
+        }
     }
 
     @media (max-width: $narrow-breakpoint) {
@@ -71,7 +93,7 @@
             }
         }
     }
-    @media (min-width: $normal-breakpoint){
+    @media (min-width: $normal-breakpoint) {
         max-width: 650px;
     }
 }

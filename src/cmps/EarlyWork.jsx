@@ -1,9 +1,7 @@
 import { WorkList } from './WorkList'
-import { workService } from '../services/workService'
 
-export const EarlyWork = () => {
+export const EarlyWork = ({ works }) => {
 
-    let works = workService.query()
     works = works.filter(work => {
         return work.category === 'early'
     })
