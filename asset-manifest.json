@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d7483482.chunk.css",
+    "main.css": "/portfolio/static/css/main.35878510.chunk.css",
     "main.js": "/portfolio/static/js/main.979d76cc.chunk.js",
     "main.js.map": "/portfolio/static/js/main.979d76cc.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0d06901d.js",
@@ -14,7 +14,7 @@
     "service-worker.js": "/portfolio/service-worker.js",
     "service-worker.js.map": "/portfolio/service-worker.js.map",
     "static/css/2.ffda3d49.chunk.css.map": "/portfolio/static/css/2.ffda3d49.chunk.css.map",
-    "static/css/main.d7483482.chunk.css.map": "/portfolio/static/css/main.d7483482.chunk.css.map",
+    "static/css/main.35878510.chunk.css.map": "/portfolio/static/css/main.35878510.chunk.css.map",
     "static/js/2.8699b72f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8699b72f.chunk.js.LICENSE.txt",
     "static/media/global.scss": "/portfolio/static/media/OpenSans-SemiBoldItalic.63afadba.ttf"
   },
@@ -22,7 +22,7 @@
     "static/js/runtime-main.0d06901d.js",
     "static/css/2.ffda3d49.chunk.css",
     "static/js/2.8699b72f.chunk.js",
-    "static/css/main.d7483482.chunk.css",
+    "static/css/main.35878510.chunk.css",
     "static/js/main.979d76cc.chunk.js"
   ]
 }
