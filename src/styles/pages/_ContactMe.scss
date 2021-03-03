@@ -68,18 +68,28 @@
     }
 
     .Toastify__toast {
+        background-color: #333;
         font-size: 1.7em;
         font-family: nunito;
-        padding: 1.2rem;
+        padding: 0.3rem 1.2rem;
         width: fit-content;
-        &-body{
-        margin-inline-end: 1.25rem;
+        white-space: nowrap;
+        &-body {
+            margin-inline-end: 1.25rem;
         }
         &--success {
-            background-color: #7cc18d;
+            &::before {
+                content: url(https://res.cloudinary.com/tomleb3/image/upload/v1614781122/portfolio/success_wqmepj.png);
+                margin-inline-end: 1rem;
+                transform: scale(0.5);
+            }
         }
         &--error {
-            background-color: $clr1;
+            &::before {
+                content: url(https://res.cloudinary.com/tomleb3/image/upload/v1614781122/portfolio/error_t0uhhg.png);
+                margin-inline-end: 1rem;
+                transform: scale(0.4);
+            }
         }
     }
 

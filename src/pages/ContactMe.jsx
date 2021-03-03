@@ -45,7 +45,7 @@ export const ContactMe = () => {
                 process.env.REACT_APP_EMAILJS_USERID)
             console.log(res)
             clearFields()
-            toast.success("Message sent successfully", {
+            toast.success("Message sent", {
                 position: "bottom-left",
                 autoClose: 5000,
                 hideProgressBar: false,
