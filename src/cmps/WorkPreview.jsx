@@ -1,4 +1,26 @@
+import { useEffect, useState } from 'react';
 import { utilService } from '../services/utilService'
+
+const GetWindowsSize = () => {
+    const [windowSize, setWindowSize] = useState({
+        width: null,
+        height: null,
+    })
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            })
+        }
+        window.addEventListener("resize", handleResize)
+        handleResize()
+        return () => window.removeEventListener("resize", handleResize)
+    }, [])
+
+    return windowSize
+}
 
 const getFrameworkLogoUrl = frameworkName => {
     switch (frameworkName) {
@@ -15,8 +37,11 @@ const getFrameworkLogoUrl = frameworkName => {
 
 export const WorkPreview = ({ work }) => {
 
+    const windowSize = GetWindowsSize()
+    const isDesktopScreen = windowSize.width > 1024
+
     return <section className="work-preview">
-        <a className="img-container" href={work.linkUrl} target="_blank" rel="noopener noreferrer">
+        <a className={isDesktopScreen ? "img-container" : "img-container inactive"} href={work.linkUrl} target="_blank" rel="noopener noreferrer">
             <img src={work.imgUrl} alt="" />
             <img src="https://res.cloudinary.com/tomleb3/image/upload/v1614444043/portfolio/eye_dsatza.svg" alt="" />
         </a>
@@ -29,9 +54,14 @@ export const WorkPreview = ({ work }) => {
                 </div>
                 <img src={getFrameworkLogoUrl(work.framework)} alt="" />
             </div>
-            {work.tags.map(tag =>
-                <a key={utilService.makeId()} href={`//google.com/search?q=${tag}`} target="_blank" rel="noopener noreferrer">#{tag}</a>
-            )}
+            <div className="flex j-between">
+                <div>
+                    {work.tags.map(tag =>
+                        <a key={utilService.makeId()} href={`//google.com/search?q=${tag}`} target="_blank" rel="noopener noreferrer">#{tag}</a>
+                    )}
+                </div>
+                <button className="btn-visit d-none right"><a href={work.linkUrl}>Visit</a></button>
+            </div>
         </div>
     </section>
 }

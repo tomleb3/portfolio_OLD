@@ -15,4 +15,7 @@
             font-size: 1.25em;
         }
     }
+    @media (max-width: $mobile-breakpoint) {
+        max-width: 100%;
+    }
 }

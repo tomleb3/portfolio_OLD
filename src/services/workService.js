@@ -12,7 +12,7 @@ function query() {
             category: 'recent',
             linkUrl: 'https://arter-app.herokuapp.com/#/',
             framework: 'react',
-            tags: ['react', 'redux', 'mongoDB', 'node.js', 'socket.io', 'PWA', 'scss'],
+            tags: ['react', 'redux', 'mongoDB', 'node.js', 'socket.io', 'cloudinary', 'PWA', 'scss'],
             hostedOn: {
                 hostName: 'Heroku',
                 hostUrl: 'https://www.heroku.com/',
