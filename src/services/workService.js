@@ -3,11 +3,14 @@ export const workService = {
 }
 
 function query() {
+    const cloudinaryBaseUrl =
+        process.env.REACT_APP_CLOUDINARY_PROJS_BASE_URL
+
     return [
         {
             _id: 'w101',
             title: 'Arter',
-            imgUrl: 'https://res.cloudinary.com/tomleb3/image/upload/v1614445923/portfolio/arter_iwutra.jpg',
+            imgUrl: `${cloudinaryBaseUrl}/arter_iwutra.jpg`,
             desc: 'A marketplace for artists',
             category: 'recent',
             linkUrl: 'https://arter-app.herokuapp.com/#/',
@@ -21,7 +24,7 @@ function query() {
         {
             _id: 'w102',
             title: 'Bookie',
-            imgUrl: 'https://res.cloudinary.com/tomleb3/image/upload/v1614445196/portfolio/bookie_wkeude.jpg',
+            imgUrl: `${cloudinaryBaseUrl}/bookie_wkeude.jpg`,
             desc: 'An online book shop',
             category: 'recent',
             linkUrl: 'https://tomleb3.github.io/bookie/#/',
@@ -35,7 +38,7 @@ function query() {
         {
             _id: 'w103',
             title: 'BTC Wallet',
-            imgUrl: 'https://res.cloudinary.com/tomleb3/image/upload/v1614445641/portfolio/btc-wallet_pgkc3y.jpg',
+            imgUrl: `${cloudinaryBaseUrl}/btc-wallet_pgkc3y.jpg`,
             desc: 'A personal Bitcoin wallet',
             category: 'recent',
             linkUrl: 'https://tomleb3.github.io/BTC-Wallet/#/',
@@ -49,7 +52,7 @@ function query() {
         {
             _id: 'w104',
             title: 'Minesweeper',
-            imgUrl: 'https://res.cloudinary.com/tomleb3/image/upload/v1614695008/portfolio/minesweeper_avy8ob.jpg',
+            imgUrl: `${cloudinaryBaseUrl}/minesweeper_avy8ob.jpg`,
             desc: 'A minesweeper game',
             category: 'early',
             linkUrl: 'https://tomleb3.github.io/Minesweeper/',
@@ -62,7 +65,7 @@ function query() {
         {
             _id: 'w105',
             title: 'iMeme',
-            imgUrl: 'https://res.cloudinary.com/tomleb3/image/upload/v1614695156/portfolio/iMeme_l8hwia.jpg',
+            imgUrl: `${cloudinaryBaseUrl}/iMeme_l8hwia.jpg`,
             desc: 'A meme generator',
             category: 'early',
             linkUrl: 'https://tomleb3.github.io/iMeme/',
@@ -75,7 +78,7 @@ function query() {
         {
             _id: 'w106',
             title: 'Numberwang!',
-            imgUrl: 'https://res.cloudinary.com/tomleb3/image/upload/v1614695482/portfolio/numberwang_la17pi.jpg',
+            imgUrl: `${cloudinaryBaseUrl}/numberwang_la17pi.jpg`,
             desc: 'A number\'s game',
             category: 'early',
             linkUrl: 'https://tomleb3.github.io/numberwang/',
@@ -88,7 +91,7 @@ function query() {
         {
             _id: 'w107',
             title: 'Keep',
-            imgUrl: 'https://res.cloudinary.com/tomleb3/image/upload/v1614707108/portfolio/keep_i83yl6.jpg',
+            imgUrl: `${cloudinaryBaseUrl}/keep_i83yl6.jpg`,
             desc: 'A personal notes app',
             category: 'early',
             framework: 'react',

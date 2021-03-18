@@ -22,3 +22,27 @@ function makeLorem(size = 80) {
     txt += '.';
     return txt;
 }
+
+
+// REACT GET WINDOW SIZE FUNCTION (w/ HOOKS) :
+
+// const GetWindowsSize = () => {
+//     const [windowSize, setWindowSize] = useState({
+//         width: null,
+//         height: null,
+//     })
+
+//     useEffect(() => {
+//         const handleResize = () => {
+//             setWindowSize({
+//                 width: window.innerWidth,
+//                 height: window.innerHeight,
+//             })
+//         }
+//         window.addEventListener("resize", handleResize)
+//         handleResize()
+//         return () => window.removeEventListener("resize", handleResize)
+//     }, [])
+
+//     return windowSize
+// }
