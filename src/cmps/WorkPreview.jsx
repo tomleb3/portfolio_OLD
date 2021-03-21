@@ -25,18 +25,18 @@ export const WorkPreview = ({ work }) => {
                 <div className="info-container flex col">
                     <strong>{work.title}</strong>
                     <p>{work.desc}</p>
-                    <span className="muted">Hosted on - <a href={work.hostedOn.hostUrl} target="_blank" rel="noopener noreferrer">{work.hostedOn.hostName}</a></span>
+                    <a href={work.repoUrl} target="_blank" rel="noopener noreferrer">Repository</a>
                 </div>
                 <img src={getFrameworkLogoUrl(work.framework)} alt="" />
             </div>
-            <div className="flex j-between">
+            <footer className="flex j-between">
                 <div>
                     {work.tags.map(tag =>
                         <a key={utilService.makeId()} href={`//google.com/search?q=${tag}`} target="_blank" rel="noopener noreferrer">#{tag}</a>
                     )}
                 </div>
                 <button className="btn-visit d-none right"><a href={work.linkUrl}>Visit</a></button>
-            </div>
+            </footer>
         </div>
     </section>
 }

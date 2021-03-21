@@ -6,11 +6,11 @@
         scroll-behavior: smooth;
         text-rendering: optimizeLegibility;
     }
-    
+
     body {
         overflow-x: hidden;
         font-family: open-sans;
-        background-color: #F5F5F5;
+        background-color: #f5f5f5;
 
         button {
             cursor: pointer;
@@ -29,6 +29,10 @@
 
         textarea {
             resize: none;
+        }
+
+        @media (max-width: $mobile-breakpoint) {
+            font-size: 18px;
         }
     }
 }

@@ -42,27 +42,32 @@
     }
     .work-info {
         padding: 1rem;
-        .info-container {
-            * {
-                margin-block-end: 5px;
-            }
-            strong {
-                font-size: 1.5em;
-            }
-            p {
-                font-size: 1.1em;
-            }
-        }
         img {
             width: 50px;
             height: 50px;
         }
-        a {
-            color: $clr2;
-            display: inline-block;
-            font-size: small;
-            &:not(:last-of-type) {
-                margin-inline-end: 10px;
+        .info-container {
+            * {
+                margin-block-end: 5px;
+            }
+            > strong {
+                font-size: 1.5em;
+            }
+            > p {
+                font-size: 1.1em;
+            }
+            > a {
+                color: $clr2;
+            }
+        }
+        footer {
+            a {
+                color: #8e8e8e;
+                display: inline-block;
+                font-size: small;
+                &:not(:last-of-type) {
+                    margin-inline-end: 10px;
+                }
             }
         }
     }

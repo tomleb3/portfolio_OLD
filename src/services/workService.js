@@ -13,13 +13,10 @@ function query() {
             imgUrl: `${cloudinaryBaseUrl}/arter_iwutra.jpg`,
             desc: 'A marketplace for artists',
             category: 'recent',
-            linkUrl: 'https://arter-app.herokuapp.com/#/',
+            linkUrl: 'https://arter-app.herokuapp.com/',
             framework: 'react',
             tags: ['react', 'redux', 'mongoDB', 'node.js', 'socket.io', 'cloudinary', 'PWA', 'scss'],
-            hostedOn: {
-                hostName: 'Heroku',
-                hostUrl: 'https://www.heroku.com/',
-            },
+            repoUrl: 'https://github.com/tomleb3/Arter',
         },
         {
             _id: 'w102',
@@ -27,13 +24,10 @@ function query() {
             imgUrl: `${cloudinaryBaseUrl}/bookie_wkeude.jpg`,
             desc: 'An online book shop',
             category: 'recent',
-            linkUrl: 'https://tomleb3.github.io/bookie/#/',
+            linkUrl: 'https://tomleb3.github.io/bookie/',
             framework: 'vue',
             tags: ['vue', 'vuex', 'scss'],
-            hostedOn: {
-                hostName: 'Github',
-                hostUrl: 'https://github.com/',
-            },
+            repoUrl: 'https://github.com/tomleb3/bookie',
         },
         {
             _id: 'w103',
@@ -41,13 +35,10 @@ function query() {
             imgUrl: `${cloudinaryBaseUrl}/btc-wallet_pgkc3y.jpg`,
             desc: 'A personal Bitcoin wallet',
             category: 'recent',
-            linkUrl: 'https://tomleb3.github.io/BTC-Wallet/#/',
+            linkUrl: 'https://tomleb3.github.io/BTC-Wallet/',
             framework: 'angular',
             tags: ['angular', 'axios', 'API', 'scss'],
-            hostedOn: {
-                hostName: 'Github',
-                hostUrl: 'https://github.com/',
-            },
+            repoUrl: 'https://github.com/tomleb3/BTC-Wallet',
         },
         {
             _id: 'w104',
@@ -57,10 +48,7 @@ function query() {
             category: 'early',
             linkUrl: 'https://tomleb3.github.io/Minesweeper/',
             tags: ['html5', 'vanilla-js', 'es6', 'css3'],
-            hostedOn: {
-                hostName: 'Github',
-                hostUrl: 'https://github.com/',
-            },
+            repoUrl: 'https://github.com/tomleb3/Minesweeper',
         },
         {
             _id: 'w105',
@@ -70,10 +58,7 @@ function query() {
             category: 'early',
             linkUrl: 'https://tomleb3.github.io/iMeme/',
             tags: ['html5', 'vanilla-js', 'es6', 'css3'],
-            hostedOn: {
-                hostName: 'Github',
-                hostUrl: 'https://github.com/',
-            },
+            repoUrl: 'https://github.com/tomleb3/iMeme',
         },
         {
             _id: 'w106',
@@ -83,10 +68,7 @@ function query() {
             category: 'early',
             linkUrl: 'https://tomleb3.github.io/numberwang/',
             tags: ['html5', 'vanilla-js', 'es6', 'css3'],
-            hostedOn: {
-                hostName: 'Github',
-                hostUrl: 'https://github.com/',
-            },
+            repoUrl: 'https://github.com/tomleb3/numberwang',
         },
         {
             _id: 'w107',
@@ -97,10 +79,7 @@ function query() {
             framework: 'react',
             linkUrl: 'https://tomleb3.github.io/keep/',
             tags: ['html5', 'react', 'es6', 'css3'],
-            hostedOn: {
-                hostName: 'Github',
-                hostUrl: 'https://github.com/',
-            },
+            repoUrl: 'https://github.com/tomleb3/keep',
         },
     ]
 }
