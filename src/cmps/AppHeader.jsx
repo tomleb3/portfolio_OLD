@@ -6,7 +6,9 @@ export const AppHeader = () => {
         <section className="main-layout flex j-between a-center">
             <NavLink to="/"><img className="logo" src="https://res.cloudinary.com/tomleb3/image/upload/v1614691244/portfolio/logo_epjdqp.png" alt="" /></NavLink>
             <nav>
-                <NavLink to="/contact" activeClassName="active-link">Contact Me</NavLink >
+                <a href="https://drive.google.com/file/d/1NbPQL4P1dtNDUsMx7qc3dQXWb44DTxp2/view?usp=sharing"
+                    activeClassName="active-link" target="_blank" rel="noopener noreferrer">Resume</a>
+                <NavLink to="/contact" activeClassName="active-link">Contact</NavLink>
             </nav>
         </section>
     </header>

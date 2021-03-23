@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export const ContactMe = () => {
+export const Contact = () => {
 
     const [senderName, setSenderName] = useState('')
     const [senderEmail, setSenderEmail] = useState('')
@@ -72,7 +72,7 @@ export const ContactMe = () => {
         setIsSubmitting(false)
     }
 
-    return <form className="contact-me main-layout" method="POST" onSubmit={onSubmitForm}>
+    return <form className="contact-page main-layout" method="POST" onSubmit={onSubmitForm}>
         <p>Thanks for taking the time to reach out.
            How can I help you today?</p>
 
