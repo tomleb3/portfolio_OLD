@@ -73,8 +73,7 @@ export const Contact = () => {
     }
 
     return <form className="contact-page main-layout" method="POST" onSubmit={onSubmitForm}>
-        <p>Thanks for taking the time to reach out.
-           How can I help you today?</p>
+        <p>Thanks for taking the time to reach out.</p>
 
         <div className="flex wrap j-between">
             <div>
