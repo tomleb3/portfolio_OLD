@@ -68,7 +68,7 @@ function query() {
             desc: 'A meme generator',
             category: 'early',
             linkUrl: 'https://tomleb3.github.io/iMeme/',
-            tags: ['html5', 'vanilla-js', 'es6', 'css3'],
+            tags: ['html5', 'vanilla-js', 'es6', 'css3', 'canvas'],
             repoUrl: 'https://github.com/tomleb3/iMeme',
         },
         {
