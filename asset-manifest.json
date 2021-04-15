@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/tomleb3.github.io/portfolio/static/css/main.ed6e8ba3.chunk.css",
-    "main.js": "/tomleb3.github.io/portfolio/static/js/main.75286a8e.chunk.js",
-    "main.js.map": "/tomleb3.github.io/portfolio/static/js/main.75286a8e.chunk.js.map",
-    "runtime-main.js": "/tomleb3.github.io/portfolio/static/js/runtime-main.d8adc4f9.js",
-    "runtime-main.js.map": "/tomleb3.github.io/portfolio/static/js/runtime-main.d8adc4f9.js.map",
-    "static/css/2.ffda3d49.chunk.css": "/tomleb3.github.io/portfolio/static/css/2.ffda3d49.chunk.css",
-    "static/js/2.8699b72f.chunk.js": "/tomleb3.github.io/portfolio/static/js/2.8699b72f.chunk.js",
-    "static/js/2.8699b72f.chunk.js.map": "/tomleb3.github.io/portfolio/static/js/2.8699b72f.chunk.js.map",
-    "static/js/3.e6817091.chunk.js": "/tomleb3.github.io/portfolio/static/js/3.e6817091.chunk.js",
-    "static/js/3.e6817091.chunk.js.map": "/tomleb3.github.io/portfolio/static/js/3.e6817091.chunk.js.map",
-    "index.html": "/tomleb3.github.io/portfolio/index.html",
-    "service-worker.js": "/tomleb3.github.io/portfolio/service-worker.js",
-    "service-worker.js.map": "/tomleb3.github.io/portfolio/service-worker.js.map",
-    "static/css/2.ffda3d49.chunk.css.map": "/tomleb3.github.io/portfolio/static/css/2.ffda3d49.chunk.css.map",
-    "static/css/main.ed6e8ba3.chunk.css.map": "/tomleb3.github.io/portfolio/static/css/main.ed6e8ba3.chunk.css.map",
-    "static/js/2.8699b72f.chunk.js.LICENSE.txt": "/tomleb3.github.io/portfolio/static/js/2.8699b72f.chunk.js.LICENSE.txt",
-    "static/media/global.scss": "/tomleb3.github.io/portfolio/static/media/OpenSans-SemiBoldItalic.63afadba.ttf"
+    "main.css": "/static/css/main.39e14e2b.chunk.css",
+    "main.js": "/static/js/main.ffc25646.chunk.js",
+    "main.js.map": "/static/js/main.ffc25646.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ae819334.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ae819334.js.map",
+    "static/css/2.ffda3d49.chunk.css": "/static/css/2.ffda3d49.chunk.css",
+    "static/js/2.8699b72f.chunk.js": "/static/js/2.8699b72f.chunk.js",
+    "static/js/2.8699b72f.chunk.js.map": "/static/js/2.8699b72f.chunk.js.map",
+    "static/js/3.e6817091.chunk.js": "/static/js/3.e6817091.chunk.js",
+    "static/js/3.e6817091.chunk.js.map": "/static/js/3.e6817091.chunk.js.map",
+    "index.html": "/index.html",
+    "service-worker.js": "/service-worker.js",
+    "service-worker.js.map": "/service-worker.js.map",
+    "static/css/2.ffda3d49.chunk.css.map": "/static/css/2.ffda3d49.chunk.css.map",
+    "static/css/main.39e14e2b.chunk.css.map": "/static/css/main.39e14e2b.chunk.css.map",
+    "static/js/2.8699b72f.chunk.js.LICENSE.txt": "/static/js/2.8699b72f.chunk.js.LICENSE.txt",
+    "static/media/global.scss": "/static/media/OpenSans-SemiBoldItalic.63afadba.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.d8adc4f9.js",
+    "static/js/runtime-main.ae819334.js",
     "static/css/2.ffda3d49.chunk.css",
     "static/js/2.8699b72f.chunk.js",
-    "static/css/main.ed6e8ba3.chunk.css",
-    "static/js/main.75286a8e.chunk.js"
+    "static/css/main.39e14e2b.chunk.css",
+    "static/js/main.ffc25646.chunk.js"
   ]
 }
