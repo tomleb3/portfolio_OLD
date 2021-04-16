@@ -23,7 +23,9 @@ export const WorkPreview = ({ work }) => {
         <div className="work-info">
             <div className="flex j-between">
                 <div className="info-container flex col">
-                    <strong>{work.title}</strong>
+                    <a href={work.linkUrl} target="_blank" rel="noopener noreferrer">
+                        <strong>{work.title}</strong>
+                    </a>
                     <p>{work.desc}</p>
                     <a href={work.repoUrl} target="_blank" rel="noopener noreferrer">Repository</a>
                 </div>

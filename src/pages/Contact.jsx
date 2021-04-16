@@ -36,14 +36,18 @@ export const Contact = () => {
     }
 
     const onSubmitForm = async ev => {
-        ev.preventDefault();
+        const {
+            REACT_APP_EMAILJS_SERVICEID,
+            REACT_APP_EMAILJS_TEMPLATEID,
+            REACT_APP_EMAILJS_USERID
+        } = process.env
+        ev.preventDefault()
         setIsSubmitting(true)
         try {
-            const res = await emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID,
-                process.env.REACT_APP_EMAILJS_TEMPLATEID,
+            await emailjs.sendForm(REACT_APP_EMAILJS_SERVICEID,
+                REACT_APP_EMAILJS_TEMPLATEID,
                 ev.target,
-                process.env.REACT_APP_EMAILJS_USERID)
-            console.log(res)
+                REACT_APP_EMAILJS_USERID)
             clearFields()
             toast.success("Message sent", {
                 position: "bottom-left",

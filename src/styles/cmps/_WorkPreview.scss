@@ -1,5 +1,4 @@
 .work-preview {
-    // border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
     max-width: fit-content;
     .img-container {
@@ -58,7 +57,16 @@
                 font-size: 1.1em;
             }
             > a {
-                color: $clr2;
+                width: fit-content;
+                &:first-of-type {
+                    transition: color 0.2s;
+                    &:hover {
+                        color: $clr2;
+                    }
+                }
+                &:last-of-type {
+                    color: $clr2;
+                }
             }
         }
         footer {
@@ -74,7 +82,6 @@
     }
 
     @media (max-width: $normal-breakpoint) {
-        // border: none;
         box-shadow: none;
         border-block-end: 1px solid rgba(0, 0, 0, 0.2);
         padding-block-end: 2rem;
