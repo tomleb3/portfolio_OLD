@@ -19,6 +19,7 @@ export const WorkPreview = ({ work }) => {
         <a className="img-container" href={work.linkUrl} target="_blank" rel="noopener noreferrer">
             <img src={work.imgUrl} alt="" />
             <img src="https://res.cloudinary.com/tomleb3/image/upload/v1614444043/portfolio/eye_dsatza.svg" alt="" />
+            {work.inDevelopment && <div>In development</div>}
         </a>
         <div className="work-info">
             <div className="flex j-between">

@@ -7,7 +7,16 @@
         display: block;
         pointer-events: none;
         cursor: default;
-        img {
+        > div {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #b94040;
+            border-radius: 2px;
+            padding: 4px;
+            color: white;
+        }
+        > img {
             &:first-of-type {
                 width: 100%;
                 height: 250px;
@@ -28,7 +37,7 @@
             pointer-events: auto;
             cursor: pointer;
             &:hover {
-                img {
+                > img {
                     &:first-of-type {
                         opacity: 0.3;
                         filter: blur(2px);
