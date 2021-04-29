@@ -1,3 +1,5 @@
+import { utilService } from './utilService'
+
 export const workService = {
     query,
 }
@@ -8,7 +10,7 @@ function query() {
 
     return [
         {
-            _id: 'w101',
+            _id: utilService.makeId(),
             title: 'Arter',
             imgUrl: `${cloudinaryBaseUrl}/arter_iwutra.jpg`,
             desc: 'A marketplace for artists',
@@ -16,11 +18,11 @@ function query() {
             linkUrl: 'https://arter-app.herokuapp.com/',
             framework: 'react',
             inDevelopment: false,
-            tags: ['react', 'redux', 'mongoDB', 'node.js', 'socket.io', 'cloudinary', 'PWA', 'SPA', 'scss'],
+            tags: ['react', 'redux', 'mongoDB', 'node.js', 'socket.io', 'material-ui', 'cloudinary', 'PWA', 'SPA', 'scss', 'MERN'],
             repoUrl: 'https://github.com/tomleb3/Arter',
         },
         {
-            _id: 'w102',
+            _id: utilService.makeId(),
             title: 'Instapound',
             imgUrl: `${cloudinaryBaseUrl}/instapound_yxz5ox.jpg`,
             desc: 'An Instagram clone',
@@ -28,11 +30,11 @@ function query() {
             linkUrl: 'https://instapound-app.herokuapp.com/',
             framework: 'react',
             inDevelopment: true,
-            tags: ['react', 'redux', 'mongoDB', 'node.js', 'socket.io', 'cloudinary', 'PWA', 'SPA', 'scss'],
+            tags: ['react', 'redux', 'mongoDB', 'node.js', 'socket.io', 'cloudinary', 'PWA', 'SPA', 'scss', 'MERN'],
             repoUrl: 'https://github.com/tomleb3/instapound',
         },
         {
-            _id: 'w103',
+            _id: utilService.makeId(),
             title: 'Bookie',
             imgUrl: `${cloudinaryBaseUrl}/bookie_wkeude.jpg`,
             desc: 'An online book shop',
@@ -44,7 +46,7 @@ function query() {
             repoUrl: 'https://github.com/tomleb3/bookie',
         },
         {
-            _id: 'w104',
+            _id: utilService.makeId(),
             title: 'BTC Wallet',
             imgUrl: `${cloudinaryBaseUrl}/btc-wallet_pgkc3y.jpg`,
             desc: 'A personal Bitcoin wallet',
@@ -56,7 +58,19 @@ function query() {
             repoUrl: 'https://github.com/tomleb3/BTC-Wallet',
         },
         {
-            _id: 'w105',
+            _id: utilService.makeId(),
+            title: 'BEAT IT',
+            imgUrl: `${cloudinaryBaseUrl}/beatit_gx7pwx.jpg`,
+            desc: 'A pad looper',
+            category: 'recent',
+            linkUrl: 'https://tomleb3.github.io/beatit/',
+            framework: 'react',
+            inDevelopment: false,
+            tags: ['react', 'scss', 'hooks'],
+            repoUrl: 'https://github.com/tomleb3/beatit',
+        },
+        {
+            _id: utilService.makeId(),
             title: 'Keep',
             imgUrl: `${cloudinaryBaseUrl}/keep_i83yl6.jpg`,
             desc: 'A personal notes app',
@@ -68,7 +82,7 @@ function query() {
             repoUrl: 'https://github.com/tomleb3/keep',
         },
         {
-            _id: 'w106',
+            _id: utilService.makeId(),
             title: 'Minesweeper',
             imgUrl: `${cloudinaryBaseUrl}/minesweeper_avy8ob.jpg`,
             desc: 'A minesweeper game',
@@ -79,7 +93,7 @@ function query() {
             repoUrl: 'https://github.com/tomleb3/Minesweeper',
         },
         {
-            _id: 'w107',
+            _id: utilService.makeId(),
             title: 'iMeme',
             imgUrl: `${cloudinaryBaseUrl}/iMeme_l8hwia.jpg`,
             desc: 'A meme generator',
@@ -90,7 +104,7 @@ function query() {
             repoUrl: 'https://github.com/tomleb3/iMeme',
         },
         {
-            _id: 'w108',
+            _id: utilService.makeId(),
             title: 'Numberwang!',
             imgUrl: `${cloudinaryBaseUrl}/numberwang_la17pi.jpg`,
             desc: 'A number\'s game',
