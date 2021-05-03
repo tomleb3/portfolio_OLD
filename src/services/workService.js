@@ -66,7 +66,7 @@ function query() {
             linkUrl: 'https://tomleb3.github.io/beatit/',
             framework: 'react',
             inDevelopment: false,
-            tags: ['react', 'scss', 'hooks'],
+            tags: ['react', 'scss', 'hooks', 'PWA'],
             repoUrl: 'https://github.com/tomleb3/beatit',
         },
         {

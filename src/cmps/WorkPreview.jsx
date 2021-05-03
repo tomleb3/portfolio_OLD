@@ -1,15 +1,16 @@
 import { utilService } from '../services/utilService'
 
 const getFrameworkLogoUrl = frameworkName => {
+    const cloudinaryBaseUrl = 'https://res.cloudinary.com/tomleb3/image/upload/v1614506528/portfolio'
     switch (frameworkName) {
         case 'react':
-            return 'https://res.cloudinary.com/tomleb3/image/upload/v1614506528/portfolio/reactJS_cvqqdx.svg'
+            return `${cloudinaryBaseUrl}/reactJS_cvqqdx.svg`
         case 'angular':
-            return 'https://res.cloudinary.com/tomleb3/image/upload/v1614506528/portfolio/angularJS_qxmjk9.svg'
+            return `${cloudinaryBaseUrl}/angularJS_qxmjk9.svg`
         case 'vue':
-            return 'https://res.cloudinary.com/tomleb3/image/upload/v1614506528/portfolio/vueJS_hcujbj.svg'
+            return `${cloudinaryBaseUrl}/vueJS_hcujbj.svg`
         default:
-            return 'https://res.cloudinary.com/tomleb3/image/upload/v1614506528/portfolio/JavaScript_qnyrge.svg'
+            return `${cloudinaryBaseUrl}/JavaScript_qnyrge.svg`
     }
 }
 

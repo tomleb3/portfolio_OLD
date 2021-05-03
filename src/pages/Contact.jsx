@@ -5,34 +5,31 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export const Contact = () => {
 
-    const [senderName, setSenderName] = useState('')
-    const [senderEmail, setSenderEmail] = useState('')
-    const [message, setMessage] = useState('')
+    const [msgFields, setMsgFields] = useState({
+        senderName: '',
+        senderEmail: '',
+        message: ''
+    })
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const { senderName, senderEmail, message } = msgFields
 
     useEffect(() => {
         window.scrollTo({ top: 0 })
     }, [])
 
-    const clearFields = () => {
-        setSenderName('')
-        setSenderEmail('')
-        setMessage('')
+    const clearMsgFields = () => {
+        setMsgFields({
+            senderName: '',
+            senderEmail: '',
+            message: ''
+        })
     }
 
     const handleChange = ev => {
-        switch (ev.target.name) {
-            case 'senderName':
-                setSenderName(ev.target.value)
-                break
-            case 'senderEmail':
-                setSenderEmail(ev.target.value)
-                break
-            case 'message':
-                setMessage(ev.target.value)
-                break
-            default: return
-        }
+        setMsgFields({
+            ...msgFields,
+            [ev.target.name]: ev.target.value
+        })
     }
 
     const onSubmitForm = async ev => {
@@ -48,7 +45,7 @@ export const Contact = () => {
                 REACT_APP_EMAILJS_TEMPLATEID,
                 ev.target,
                 REACT_APP_EMAILJS_USERID)
-            clearFields()
+            clearMsgFields()
             toast.success("Message sent", {
                 position: "bottom-left",
                 autoClose: 5000,
