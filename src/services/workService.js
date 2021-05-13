@@ -59,6 +59,18 @@ function query() {
         },
         {
             _id: utilService.makeId(),
+            title: 'Louder',
+            imgUrl: `${cloudinaryBaseUrl}/Louder_akv6l7.png`,
+            desc: 'A music player',
+            category: 'recent',
+            linkUrl: 'https://tomleb3.github.io/louder/',
+            framework: 'react',
+            inDevelopment: false,
+            tags: ['react', 'scss', 'hooks', 'soundcloud', 'API', 'PWA'],
+            repoUrl: 'https://github.com/tomleb3/louder',
+        },
+        {
+            _id: utilService.makeId(),
             title: 'BEAT IT',
             imgUrl: `${cloudinaryBaseUrl}/beatit_gx7pwx.jpg`,
             desc: 'A pad looper',
