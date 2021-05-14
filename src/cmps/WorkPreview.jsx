@@ -16,13 +16,13 @@ const getFrameworkLogoUrl = frameworkName => {
 
 export const WorkPreview = ({ work }) => {
 
-    return <section className="work-preview">
+    return <section className="work-preview flex col">
         <a className="img-container" href={work.linkUrl} target="_blank" rel="noopener noreferrer">
             <img src={work.imgUrl} alt="" />
             <img src="https://res.cloudinary.com/tomleb3/image/upload/v1614444043/portfolio/eye_dsatza.svg" alt="" />
             {work.inDevelopment && <div>In development</div>}
         </a>
-        <div className="work-info">
+        <div className="work-info flex col grow j-between">
             <div className="flex j-between">
                 <div className="info-container flex col">
                     <a href={work.linkUrl} target="_blank" rel="noopener noreferrer">
