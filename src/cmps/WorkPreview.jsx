@@ -33,7 +33,7 @@ export const WorkPreview = ({ work }) => {
                 </div>
                 <img src={getFrameworkLogoUrl(work.framework)} alt="" />
             </div>
-            <footer className="flex j-between">
+            <footer className="flex j-between a-end">
                 <div>
                     {work.tags.map(tag =>
                         <a key={utilService.makeId()} href={`//google.com/search?q=${tag}`} target="_blank" rel="noopener noreferrer">#{tag}</a>
