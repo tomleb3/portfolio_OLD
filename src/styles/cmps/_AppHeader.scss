@@ -1,8 +1,19 @@
 .app-header {
     background-color: transparent;
     z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $clr-body;
+    opacity: 0;
+    transition: opacity 0.2s;
 
-    section {
+    &.is-shown {
+        opacity: 1;
+    }
+    > section {
         padding: 10px 0;
         a {
             .logo {
@@ -11,8 +22,8 @@
         }
         nav {
             .active-link {
-               text-decoration: underline;
-               text-decoration-color: $clr1;
+                text-decoration: underline;
+                text-decoration-color: $clr1;
             }
             *:not(:last-child) {
                 margin-inline-end: 25px;

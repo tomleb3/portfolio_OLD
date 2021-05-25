@@ -4,7 +4,6 @@ export const Skills = () => {
         <div className="flex col">
             <img src="https://res.cloudinary.com/tomleb3/image/upload/v1614182071/portfolio/designer_uyufed.svg" alt="" />
             <strong>Frontend</strong>
-            {/* <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p> */}
             <p>I value simple and refined code,<br />
                  clean design patterns,<br />
                   and good UI/UX</p>

@@ -1,11 +1,13 @@
 .hero {
-    margin-block-start: 30px;
-    padding-top: 2rem;
     text-align: center;
+    height: 100vh;
     * {
-        margin: auto;
+        margin: 0 auto;
         display: block;
         width: fit-content;
+    }
+    > div {
+        margin-top: 175px;
     }
     strong,
     p {
@@ -20,8 +22,8 @@
         font-size: 1.5em;
     }
     .avatar {
-        width: 210px;
-        margin: 6rem auto;
+        width: 22vh;
+        margin: auto;
     }
 
     @media (max-width: $normal-breakpoint) {
@@ -38,6 +40,12 @@
     @media (max-width: $narrow-breakpoint) {
         strong {
             font-size: 2em;
+        }
+        .avatar{
+            width: 17vh;
+        }
+        >div{
+            margin-top: 125px;
         }
     }
 }

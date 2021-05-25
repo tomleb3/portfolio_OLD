@@ -1,5 +1,5 @@
 .contact-page {
-    margin-block-start: 75px;
+    margin-block-start: 150px;
     p {
         font-family: nunito;
         font-size: 3em;
@@ -94,6 +94,9 @@
     }
 
     @media (max-width: $narrow-breakpoint) {
+        > p {
+            font-size: 2em;
+        }
         > div {
             > div {
                 width: 100%;

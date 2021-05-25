@@ -15,6 +15,7 @@ export const Contact = () => {
 
     useEffect(() => {
         window.scrollTo({ top: 0 })
+        document.title = 'Tom Leb \u2022 Contact'
     }, [])
 
     const clearMsgFields = () => {

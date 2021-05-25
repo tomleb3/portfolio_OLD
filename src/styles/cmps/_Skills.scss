@@ -4,19 +4,7 @@
     margin-block-start: -9rem;
     background-color: white;
 
-    img {
-        height: 48px;
-    }
-    p {
-        margin-block-end: 5rem !important;
-    }
-    label {
-        color: $clr2;
-    }
-    span {
-        font-size: 0.9em;
-    }
-    div {
+    > div {
         width: 33.3%;
         text-align: center;
         padding: 70px 45px;
@@ -26,16 +14,31 @@
         * {
             margin-block-end: 1.5rem;
         }
+        > img {
+            height: 48px;
+        }
+        > p {
+            margin-block-end: 5rem;
+        }
+        > label {
+            color: $clr2;
+        }
+        > span {
+            font-size: 0.9em;
+        }
     }
-    
+
     @media (max-width: $normal-breakpoint) {
         flex-direction: column;
         div {
             width: 100%;
-            padding: 35px 45px;
+            padding: 30px 45px;
             &:not(:last-of-type) {
                 border-right: none;
                 border-bottom: 1px solid #e6ecf8;
+            }
+            * {
+                margin-block-end: 2rem !important;
             }
         }
     }
