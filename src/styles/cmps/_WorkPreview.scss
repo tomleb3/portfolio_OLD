@@ -6,8 +6,13 @@
         .img-container > img:first-of-type {
             height: 250px;
         }
-        .btn-visit {
-            display: none;
+        .work-info > footer {
+            .btn-visit {
+                display: none;
+            }
+            .tags-container {
+                line-height: 22px;
+            }
         }
     }
     &.list-view {
@@ -83,6 +88,9 @@
                 width: fit-content;
                 margin-inline-end: 10px;
                 color: $clr2;
+            }
+            .tags-container {
+                display: none;
             }
         }
         .tags-container a {
