@@ -1,9 +1,14 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import { SettingsContext } from '../App'
+import { PersonalInfo } from "../cmps/PersonalInfo";
 import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const Contact = () => {
+
+    const { settings } = useContext(SettingsContext)
+    const { darkMode } = settings
 
     const [msgFields, setMsgFields] = useState({
         senderName: '',
@@ -74,9 +79,10 @@ export const Contact = () => {
         setIsSubmitting(false)
     }
 
-    return <form className="contact-page main-layout" method="POST" onSubmit={onSubmitForm}>
-        <p>Thanks for taking the time to reach out.</p>
+    return <form method="POST" onSubmit={onSubmitForm}
+        className={`contact-page main-layout ${darkMode ? 'dark-mode' : ''}`}>
 
+        <p>Thanks for taking the time to reach out.</p>
         <div className="flex wrap j-between">
             <div>
                 <label htmlFor="senderName">Name</label>
@@ -93,5 +99,6 @@ export const Contact = () => {
         </div>
         <button className={isSubmitting ? 'btn-submit submitting' : 'btn-submit'} type="submit">Submit</button>
         <ToastContainer />
+        <PersonalInfo />
     </form>
 }

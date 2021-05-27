@@ -1,6 +1,12 @@
 .introduction {
-    background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(117,16,247,1) 100%);
+    background: $clr2;
+    background: linear-gradient(0deg, rgba(245, 245, 245, 1) 0%, rgba(117, 16, 247, 1) 100%);
 
+    &.dark-mode {
+        background: rgb(51,51,51);
+        background: linear-gradient(0deg, rgba(51,51,51,1) 0%, $clr2-darkmode 100%);
+    }
+    
     .content {
         padding: 4rem 1.5rem 16rem;
         text-align: center;
@@ -10,7 +16,7 @@
             font-family: nunito;
             margin-block-end: 1.5rem;
         }
-        p{
+        p {
             font-size: 1.25rem;
             font-weight: 300;
         }

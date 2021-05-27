@@ -3,16 +3,16 @@
     height: 100vh;
     * {
         margin: 0 auto;
-        display: block;
         width: fit-content;
     }
     > div {
-        margin-top: 175px;
+        margin-block-start: 175px;
     }
     strong,
     p {
         margin-block-end: 1.5rem;
         font-weight: 300;
+        display: block;
     }
     strong {
         font-size: 3em;
@@ -41,11 +41,11 @@
         strong {
             font-size: 2em;
         }
-        .avatar{
+        .avatar {
             width: 17vh;
         }
-        >div{
-            margin-top: 125px;
+        > div {
+            margin-block-start: 125px;
         }
     }
 }

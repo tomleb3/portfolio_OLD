@@ -1,32 +1,47 @@
+import { createContext, useEffect, useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { AppHeader } from './cmps/AppHeader'
 import { AppFooter } from './cmps/AppFooter'
 import { Contact } from './pages/Contact'
-import { createContext, useState } from 'react'
+import { utilService } from './services/utilService'
+import { Resume } from './pages/Resume'
 
-export const ScrollContext = createContext(null)
+export const SettingsContext = createContext(null)
 
 export function App() {
 
-  const [isScrollUp, toggleIsScrollUp] = useState(true)
+  const STORAGE_KEY = 'user-settings'
+  const { loadFromStorage, saveToStorage } = utilService
+
+  const settingsFromStorage = loadFromStorage(STORAGE_KEY)
+  const [settings, setSettings] = useState(settingsFromStorage || {})
   
-  const handleScroll = ev => {
-    ev.nativeEvent.wheelDelta > 0
-      ? !isScrollUp && toggleIsScrollUp(true)
-      : isScrollUp && toggleIsScrollUp(false)
-  }
+  settings.darkMode ?
+    document.body.classList.add('dark-mode')
+    : document.body.classList.remove('dark-mode')
+
+  const themeChange = darkMode =>
+    setSettings({ ...settings, darkMode })
+
+  const viewChange = listView =>
+    setSettings({ ...settings, listView })
+
+  useEffect(() => {
+    saveToStorage(STORAGE_KEY, settings)
+  }, [settings])
 
   return (
-    <main className="App" onWheel={handleScroll}>
-      <ScrollContext.Provider value={isScrollUp}>
+    <main className="App">
+      <SettingsContext.Provider value={{ settings, themeChange, viewChange }}>
         <AppHeader />
         <Switch>
-          <Route path="/contact" component={Contact} />
+          <Route path="/contact/" component={Contact} />
+          <Route path="/resume/" component={Resume} />
           <Route path="/" component={Home} />
         </Switch>
         <AppFooter />
-      </ScrollContext.Provider>
+      </SettingsContext.Provider>
     </main>
-  );
+  )
 }

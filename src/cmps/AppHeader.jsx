@@ -1,19 +1,64 @@
-import { useContext } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { ScrollContext } from '../App'
+import { useContext } from "react"
+import { SettingsContext } from '../App'
+import { UserSettings } from './UserSettings'
 
 export const AppHeader = () => {
 
-    const isScrollUp = useContext(ScrollContext)
+    const { settings } = useContext(SettingsContext)
+    const { listView, darkMode } = settings
+    const [menu, setMenu] = useState(false)
+    const headerRef = useRef(null)
+    let lastScrollY = 0
+    const cloudinaryBaseUrl = process.env.REACT_APP_CLOUDINARY_BASE_URL
 
-    return <header className={`app-header ${isScrollUp ? 'is-shown' : ''}`}>
+    const handleScroll = () => {
+        closeMenu()
+        window.scrollY ?
+            headerRef.current.style.borderBottom = '1px solid #e2e2e2'
+            : headerRef.current.style.borderBottom = 'none'
+        window.scrollY > lastScrollY ?
+            headerRef.current.style.top = '-77px'
+            : headerRef.current.style.top = 0
+        lastScrollY = window.scrollY
+    }
+
+    const toggleMenu = () => setMenu(!menu)
+    const closeMenu = () => setMenu(false)
+
+    let routeLinks = (
+        <div className="routes-container flex">
+            <NavLink to="/" exact activeClassName="active-link" onClick={closeMenu}>Home</NavLink>
+            <NavLink to="/resume/" activeClassName="active-link" onClick={closeMenu}>Resume</NavLink>
+            <NavLink to="/contact/" activeClassName="active-link" onClick={closeMenu}>Contact</NavLink>
+        </div>
+    )
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => handleScroll())
+        return () =>
+            window.removeEventListener('scroll', () => handleScroll())
+    }, [])
+
+    return <header className={`app-header ${darkMode ? 'dark-mode' : ''}`} ref={headerRef}>
         <section className="main-layout flex j-between a-center">
-            <NavLink to="/"><img className="logo" src="https://res.cloudinary.com/tomleb3/image/upload/v1614691244/portfolio/logo_epjdqp.png" alt="" /></NavLink>
-            <nav>
-                <a href="https://drive.google.com/file/d/1mXnY4GmRLUajSwwLrCB2FCL3Kcd0g12z/view?usp=sharing"
-                    target="_blank" rel="noopener noreferrer">Resume</a>
-                <NavLink to="/contact" activeClassName="active-link">Contact</NavLink>
+            <NavLink to="/" onClick={() => window.scrollTo({ top: 0 })}>
+                <img className="logo" src={`${process.env.PUBLIC_URL}/favicon.png`} alt="" />
+            </NavLink>
+            <nav className="flex a-center">
+                {routeLinks}
+                <button onClick={toggleMenu}>⚙️</button>
             </nav>
+            <button className="hamburger-menu d-none" onClick={toggleMenu}>
+                <img src={`${cloudinaryBaseUrl}/hamburger-menu_ervpof.svg`} alt="Menu" />
+            </button>
+            <div className={`menu-container ${menu ? '' : 'd-none'}`}>
+                {routeLinks}
+                <UserSettings />
+                <div className="dialog-bubble"></div>
+                <div className="dialog-background" onClick={closeMenu}></div>
+            </div>
         </section>
     </header>
 }

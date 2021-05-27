@@ -4,6 +4,10 @@
     margin-block-start: -9rem;
     background-color: white;
 
+    &.dark-mode {
+        background-color: $clr1-darkmode;
+    }
+
     > div {
         width: 33.3%;
         text-align: center;

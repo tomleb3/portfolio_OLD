@@ -8,6 +8,9 @@
     position: relative;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px $clr2;
 
+    &.dark-mode {
+        background-color: $clr2-darkmode;
+    }
     * {
         padding-block-start: 5px;
         padding-block-end: 5px;
@@ -23,8 +26,6 @@
         text-align: center;
     }
     button {
-        border: none;
-        background-color: transparent;
         color: white;
         padding: 0.75em 2em;
         border: 2px solid white;

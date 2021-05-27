@@ -1,6 +1,21 @@
 .work-preview {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
-    max-width: fit-content;
+    &.grid-view {
+        flex-direction: column;
+        max-width: fit-content;
+        .img-container > img:first-of-type {
+            height: 250px;
+        }
+        .btn-visit {
+            display: none;
+        }
+    }
+    &.list-view {
+        margin-block-end: 50px;
+        .img-container {
+            width: 300px;
+        }
+    }
     .img-container {
         position: relative;
         height: fit-content;
@@ -19,7 +34,6 @@
         > img {
             &:first-of-type {
                 width: 100%;
-                height: 250px;
                 object-fit: cover;
                 object-position: top;
                 transition: opacity 0.1s;
@@ -57,7 +71,7 @@
         }
         .info-container {
             * {
-                margin-block-end: 5px;
+                margin-block-end: 7px;
             }
             > strong {
                 font-size: 1.5em;
@@ -65,27 +79,29 @@
             > p {
                 font-size: 1.1em;
             }
-            > a {
+            > div > a {
                 width: fit-content;
-                &:first-of-type {
-                    transition: color 0.2s;
-                    &:hover {
-                        color: $clr2;
-                    }
-                }
-                &:last-of-type {
-                    color: $clr2;
-                }
+                margin-inline-end: 10px;
+                color: $clr2;
+            }
+        }
+        .tags-container a {
+            color: #8e8e8e;
+            display: inline-block;
+            font-size: small;
+            &:not(:last-of-type) {
+                margin-inline-end: 10px;
             }
         }
         footer {
-            a {
-                color: #8e8e8e;
-                display: inline-block;
-                font-size: small;
-                &:not(:last-of-type) {
-                    margin-inline-end: 10px;
-                }
+            > a .btn-visit {
+                background-color: $clr1;
+                margin-block-start: 5px;
+                padding: 0.5rem 2rem;
+                border: none;
+                border-radius: 4px;
+                color: white;
+                font-size: 1.2rem;
             }
         }
     }
@@ -94,20 +110,65 @@
         box-shadow: none;
         border-block-end: 1px solid rgba(0, 0, 0, 0.2);
         padding-block-end: 2rem;
-        .work-info {
+        &.grid-view .work-info {
             padding: 0;
-            .btn-visit {
-                background-color: $clr1;
-                display: block;
-                padding: 0.5rem 2rem;
-                border: none;
-                border-radius: 4px;
-                max-height: 2.375rem;
-                align-self: flex-end;
-                a {
-                    color: white;
-                    font-size: 1.2rem;
+            > footer .btn-visit {
+                display: unset;
+            }
+        }
+        &.list-view .work-info {
+            padding: 0 1rem;
+            > footer {
+                flex-direction: column;
+                .tags-container {
+                    margin-block-end: 5px;
                 }
+            }
+        }
+    }
+    @media (max-width: $narrow-breakpoint) {
+        &.list-view {
+            .img-container {
+                width: 200px;
+                > img:first-of-type {
+                    height: 100%;
+                }
+            }
+            .work-info {
+                .info-container > div {
+                    > label {
+                        display: unset;
+                    }
+                    .tags-container {
+                        display: none;
+                    }
+                    > input[type="checkbox"]:checked + .tags-container {
+                        display: unset;
+                        position: absolute;
+                        top: 28px;
+                        left: 0;
+                        padding: 0.5rem;
+                        background-color: white;
+                        border: 1px solid $clr-border;
+                        border-radius: 5px;
+                    }
+                }
+                > footer .tags-container {
+                    display: none;
+                }
+            }
+        }
+        &.dark-mode {
+            .work-info .info-container > div > input[type="checkbox"]:checked + .tags-container {
+                background-color: $clr1-darkmode;
+            }
+        }
+    }
+    @media (max-width: $mobile-breakpoint) {
+        &.list-view .img-container {
+            width: 125px;
+            > div {
+                font-size: 0.5em;
             }
         }
     }

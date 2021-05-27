@@ -1,6 +1,12 @@
+import { useContext } from "react"
+import { SettingsContext } from '../App'
+
 export const Skills = () => {
 
-    return <section className="skills main-layout flex j-between">
+    const { settings } = useContext(SettingsContext)
+    const { listView, darkMode } = settings
+
+    return <section className={`skills main-layout flex j-between ${darkMode ? 'dark-mode' : ''}`}>
         <div className="flex col">
             <img src="https://res.cloudinary.com/tomleb3/image/upload/v1614182071/portfolio/designer_uyufed.svg" alt="" />
             <strong>Frontend</strong>

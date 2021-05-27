@@ -15,6 +15,9 @@ body {
 
     button {
         cursor: pointer;
+        border: none;
+        background-color: transparent;
+        padding: 0;
         outline: none;
     }
 
@@ -32,12 +35,17 @@ body {
         resize: none;
     }
 
+    &.dark-mode {
+        background-color: $clr-body-darkmode;
+        color: whitesmoke;
+    }
+
     &::-webkit-scrollbar {
-        width: 5px; /* width of the entire scrollbar */
+        width: 5px;
     }
 
     &::-webkit-scrollbar-track {
-        background: transparent; /* color of the tracking area */
+        background: transparent;
     }
 
     &::-webkit-scrollbar-thumb {

@@ -48,7 +48,7 @@ function query() {
         {
             _id: utilService.makeId(),
             title: 'BTC Wallet',
-            imgUrl: `${cloudinaryBaseUrl}/btc-wallet_pgkc3y.jpg`,
+            imgUrl: `${cloudinaryBaseUrl}/btcwallet_y2dk09.jpg`,
             desc: 'A personal Bitcoin wallet',
             category: 'recent',
             linkUrl: 'https://tomleb3.github.io/BTC-Wallet/',
@@ -72,7 +72,7 @@ function query() {
         {
             _id: utilService.makeId(),
             title: 'BEAT IT',
-            imgUrl: `${cloudinaryBaseUrl}/beatit_gx7pwx.jpg`,
+            imgUrl: `${cloudinaryBaseUrl}/beatit_xv6jo8.jpg`,
             desc: 'A pad looper',
             category: 'recent',
             linkUrl: 'https://tomleb3.github.io/beatit/',

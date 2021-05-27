@@ -1,6 +1,9 @@
 export const utilService = {
     makeId,
     makeLorem,
+    saveToStorage,
+    loadFromStorage,
+    removeFromStorage
 }
 
 function makeId(length = 5) {
@@ -24,4 +27,16 @@ function makeLorem(size = 80) {
     }
     txt += '.'
     return txt
+}
+
+function saveToStorage(key, val) {
+    const str = JSON.stringify(val)
+    localStorage.setItem(key, str)
+}
+function loadFromStorage(key) {
+    const str = localStorage.getItem(key)
+    return JSON.parse(str)
+}
+function removeFromStorage(key) {
+    localStorage.removeItem(key)
 }
