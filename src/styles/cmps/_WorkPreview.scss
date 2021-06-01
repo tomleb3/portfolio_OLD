@@ -1,5 +1,8 @@
 .work-preview {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+    &.dark-mode {
+        box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0.15);
+    }
     &.grid-view {
         flex-direction: column;
         max-width: fit-content;
@@ -19,6 +22,11 @@
         margin-block-end: 50px;
         .img-container {
             width: 300px;
+            display: flex;
+            flex-direction: column;
+            > img:first-of-type {
+                flex: 1;
+            }
         }
     }
     .img-container {
@@ -118,6 +126,10 @@
         box-shadow: none;
         border-block-end: 1px solid rgba(0, 0, 0, 0.2);
         padding-block-end: 2rem;
+        &.dark-mode {
+            box-shadow: none;
+            border-block-end: 1px solid rgba(255, 255, 255, 0.2);
+        }
         &.grid-view .work-info {
             padding: 0;
             > footer .btn-visit {
@@ -176,7 +188,7 @@
         &.list-view .img-container {
             width: 125px;
             > div {
-                font-size: 0.5em;
+                font-size: 0.55em;
             }
         }
     }

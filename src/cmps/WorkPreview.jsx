@@ -32,8 +32,8 @@ export const WorkPreview = ({ work }) => {
 
     return <section className={`work-preview flex ${listView ? 'list-view' : 'grid-view'} ${darkMode ? 'dark-mode' : ''}`}>
         <a className="img-container" href={work.linkUrl} target="_blank" rel="noopener noreferrer">
-            <img src={work.imgUrl} alt="" />
-            <img src="https://res.cloudinary.com/tomleb3/image/upload/v1614444043/portfolio/eye_dsatza.svg" alt="" />
+            <img src={work.imgUrl} alt="Project" />
+            <img src="https://res.cloudinary.com/tomleb3/image/upload/v1614444043/portfolio/eye_dsatza.svg" alt="View" />
             {work.inDevelopment && <div>In development</div>}
         </a>
         <div className="work-info flex col grow j-between">
@@ -43,7 +43,7 @@ export const WorkPreview = ({ work }) => {
                         <strong>{work.title}</strong>
                     </a>
                     <p>{work.desc}</p>
-                    <div className="pos-relative">
+                    <div className="flex pos-relative">
                         <a href={work.repoUrl} target="_blank" rel="noopener noreferrer">Repository</a>
                         <label className="fs16 d-none pointer" htmlFor={`tags-toggler ${work._id}`}>📜</label>
                         <input id={`tags-toggler ${work._id}`} type="checkbox" className="d-none" />
