@@ -2,6 +2,9 @@
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
     &.dark-mode {
         box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0.15);
+        .img-container > img:last-of-type {
+            filter: invert(1);
+        }
     }
     &.grid-view {
         flex-direction: column;
