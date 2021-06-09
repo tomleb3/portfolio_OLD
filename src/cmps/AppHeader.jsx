@@ -7,7 +7,7 @@ import { UserSettings } from './UserSettings'
 export const AppHeader = () => {
 
     const { settings } = useContext(SettingsContext)
-    const { listView, darkMode } = settings
+    const { darkMode } = settings
     const [menu, setMenu] = useState(false)
     const headerRef = useRef(null)
     let lastScrollY = 0
