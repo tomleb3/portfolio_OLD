@@ -13,7 +13,7 @@ export const Home = () => {
 
     useEffect(() => {
         window.scrollTo({ top: 0 })
-        document.title = 'Tom Leb \u2022 Portfolio'
+        document.title = 'Tom Leb\'s Portfolio'
     }, [])
 
     return <main className="home">

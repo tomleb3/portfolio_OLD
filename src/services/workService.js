@@ -66,7 +66,7 @@ function query() {
             linkUrl: 'https://tomleb3.github.io/louder/',
             framework: 'react',
             inDevelopment: false,
-            tags: ['react', 'scss', 'hooks', 'soundcloud', 'API', 'PWA'],
+            tags: ['react', 'scss', 'hooks', 'soundcloud', 'context-api', 'API', 'PWA'],
             repoUrl: 'https://github.com/tomleb3/louder',
         },
         {
