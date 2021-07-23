@@ -8,7 +8,6 @@
     }
     &.grid-view {
         flex-direction: column;
-        max-width: fit-content;
         .img-container > img:first-of-type {
             height: 250px;
         }
