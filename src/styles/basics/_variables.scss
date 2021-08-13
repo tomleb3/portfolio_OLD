@@ -1,14 +1,16 @@
 // Colors
-$clr1: #ed4c5f;
-$clr2: #7510f7;
+$clr-logo: #ed4c5f;
+$clr-main: #7510f7;
 $clr-body: #f5f5f5;
+$clr-txt: #262626;
 $clr-border: #dad8d8;
 $clr-footer: #8d9aa5;
 
-// Colors (DarkMode)
+// Colors (dark-mode)
+$clr-main-darkmode: #567bb3;
+$clr-secondary-darkmode: #444;
 $clr-body-darkmode: #333;
-$clr1-darkmode: #444;
-$clr2-darkmode: #dabd4f;
+$clr-txt-darkmode: #f5f5f5;
 
 // Breakpoints
 $mobile-breakpoint: 580px;

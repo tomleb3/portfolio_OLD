@@ -10,6 +10,6 @@ export const Resume = () => {
     }, [])
 
     return <section className="resume-page main-layout m-page flex">
-        <iframe src={pdfUrl}></iframe>
+        <iframe title="Resume" src={pdfUrl}></iframe>
     </section>
 }

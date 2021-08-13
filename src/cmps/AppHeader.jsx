@@ -1,8 +1,9 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useContext } from "react"
 import { SettingsContext } from '../App'
 import { UserSettings } from './UserSettings'
+import { HamburgerMenu } from './Icons/HamburgerMenu'
 
 export const AppHeader = () => {
 
@@ -10,19 +11,18 @@ export const AppHeader = () => {
     const { darkMode } = settings
     const [menu, setMenu] = useState(false)
     const headerRef = useRef(null)
-    let lastScrollY = 0
-    const cloudinaryBaseUrl = process.env.REACT_APP_CLOUDINARY_BASE_URL
+    const lastScrollY = useRef(0)
 
-    const handleScroll = () => {
+    const handleScroll = useCallback(() => {
         closeMenu()
         window.scrollY ?
             headerRef.current.style.borderBottom = '1px solid #e2e2e2'
             : headerRef.current.style.borderBottom = 'none'
-        window.scrollY > lastScrollY ?
+        window.scrollY > lastScrollY.current ?
             headerRef.current.style.top = '-77px'
             : headerRef.current.style.top = 0
-        lastScrollY = window.scrollY
-    }
+        lastScrollY.current = window.scrollY
+    }, [])
 
     const toggleMenu = () => setMenu(!menu)
     const closeMenu = () => setMenu(false)
@@ -39,7 +39,7 @@ export const AppHeader = () => {
         window.addEventListener('scroll', () => handleScroll())
         return () =>
             window.removeEventListener('scroll', () => handleScroll())
-    }, [])
+    }, [handleScroll])
 
     return <header className={`app-header ${darkMode ? 'dark-mode' : ''}`} ref={headerRef}>
         <section className="main-layout flex j-between a-center">
@@ -51,7 +51,7 @@ export const AppHeader = () => {
                 <button onClick={toggleMenu}>⚙️</button>
             </nav>
             <button className="hamburger-menu d-none" onClick={toggleMenu}>
-                <img src={`${cloudinaryBaseUrl}/hamburger-menu_ervpof.svg`} alt="Menu" />
+                <HamburgerMenu isDarkMode={darkMode} />
             </button>
             <div className={`menu-container ${menu ? '' : 'd-none'}`}>
                 {routeLinks}

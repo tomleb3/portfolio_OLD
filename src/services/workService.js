@@ -5,14 +5,14 @@ export const workService = {
 }
 
 function query() {
-    const cloudinaryBaseUrl =
+    const cloudinaryProjsBaseUrl =
         process.env.REACT_APP_CLOUDINARY_PROJS_BASE_URL
 
     return [
         {
             _id: utilService.makeId(),
             title: 'Arter',
-            imgUrl: `${cloudinaryBaseUrl}/arter_iwutra.jpg`,
+            imgUrl: `${cloudinaryProjsBaseUrl}/arter_iwutra.jpg`,
             desc: 'A marketplace for artists',
             category: 'recent',
             linkUrl: 'https://arter-app.herokuapp.com/',
@@ -24,7 +24,7 @@ function query() {
         {
             _id: utilService.makeId(),
             title: 'Instapound',
-            imgUrl: `${cloudinaryBaseUrl}/instapound_yxz5ox.jpg`,
+            imgUrl: `${cloudinaryProjsBaseUrl}/instapound_yxz5ox.jpg`,
             desc: 'An Instagram clone',
             category: 'recent',
             linkUrl: 'https://instapound-app.herokuapp.com/',
@@ -36,7 +36,7 @@ function query() {
         {
             _id: utilService.makeId(),
             title: 'Bookie',
-            imgUrl: `${cloudinaryBaseUrl}/bookie_wkeude.jpg`,
+            imgUrl: `${cloudinaryProjsBaseUrl}/bookie_wkeude.jpg`,
             desc: 'An online book shop',
             category: 'recent',
             linkUrl: 'https://tomleb3.github.io/bookie/',
@@ -48,7 +48,7 @@ function query() {
         {
             _id: utilService.makeId(),
             title: 'BTC Wallet',
-            imgUrl: `${cloudinaryBaseUrl}/btcwallet_y2dk09.jpg`,
+            imgUrl: `${cloudinaryProjsBaseUrl}/btcwallet_y2dk09.jpg`,
             desc: 'A personal Bitcoin wallet',
             category: 'recent',
             linkUrl: 'https://tomleb3.github.io/BTC-Wallet/',
@@ -60,7 +60,7 @@ function query() {
         {
             _id: utilService.makeId(),
             title: 'Louder',
-            imgUrl: `${cloudinaryBaseUrl}/Louder_akv6l7.png`,
+            imgUrl: `${cloudinaryProjsBaseUrl}/Louder_akv6l7.png`,
             desc: 'A music player',
             category: 'recent',
             linkUrl: 'https://tomleb3.github.io/louder/',
@@ -72,7 +72,7 @@ function query() {
         {
             _id: utilService.makeId(),
             title: 'BEAT IT',
-            imgUrl: `${cloudinaryBaseUrl}/beatit_xv6jo8.jpg`,
+            imgUrl: `${cloudinaryProjsBaseUrl}/beatit_xv6jo8.jpg`,
             desc: 'A pad looper',
             category: 'recent',
             linkUrl: 'https://tomleb3.github.io/beatit/',
@@ -84,7 +84,7 @@ function query() {
         {
             _id: utilService.makeId(),
             title: 'Keep',
-            imgUrl: `${cloudinaryBaseUrl}/keep_i83yl6.jpg`,
+            imgUrl: `${cloudinaryProjsBaseUrl}/keep_i83yl6.jpg`,
             desc: 'A personal notes app',
             category: 'early',
             linkUrl: 'https://tomleb3.github.io/keep/',
@@ -96,7 +96,7 @@ function query() {
         {
             _id: utilService.makeId(),
             title: 'Minesweeper',
-            imgUrl: `${cloudinaryBaseUrl}/minesweeper_avy8ob.jpg`,
+            imgUrl: `${cloudinaryProjsBaseUrl}/minesweeper_avy8ob.jpg`,
             desc: 'A minesweeper game',
             category: 'early',
             linkUrl: 'https://tomleb3.github.io/Minesweeper/',
@@ -107,7 +107,7 @@ function query() {
         {
             _id: utilService.makeId(),
             title: 'iMeme',
-            imgUrl: `${cloudinaryBaseUrl}/iMeme_l8hwia.jpg`,
+            imgUrl: `${cloudinaryProjsBaseUrl}/iMeme_l8hwia.jpg`,
             desc: 'A meme generator',
             category: 'early',
             inDevelopment: false,
@@ -118,7 +118,7 @@ function query() {
         {
             _id: utilService.makeId(),
             title: 'Numberwang!',
-            imgUrl: `${cloudinaryBaseUrl}/numberwang_la17pi.jpg`,
+            imgUrl: `${cloudinaryProjsBaseUrl}/numberwang_la17pi.jpg`,
             desc: 'A number\'s game',
             category: 'early',
             inDevelopment: false,

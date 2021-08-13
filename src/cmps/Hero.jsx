@@ -1,12 +1,13 @@
 import { useContext } from "react"
 import { SettingsContext } from '../App'
 import Typewriter from "typewriter-effect"
+import { HeroIcon } from "./Icons/HeroIcon"
 
 export const Hero = () => {
 
     const { settings } = useContext(SettingsContext)
     const { darkMode } = settings
-    const cloudinaryBaseUrl = process.env.REACT_APP_CLOUDINARY_BASE_URL
+    const publicUrl = process.env.PUBLIC_URL
 
     return <section className={`hero main-layout flex col j-between ${darkMode ? 'dark-mode' : ''}`}>
         <div>
@@ -22,8 +23,7 @@ export const Hero = () => {
             </strong>
             <p>Designing and coding fully-fledged applications. Driven by passion</p>
         </div>
-        <img className="avatar" src={`${cloudinaryBaseUrl}/me_nlxevb.png`} alt="Avatar" />
-        <img className="hero-img" alt="Hero"
-            src={`${cloudinaryBaseUrl}/${darkMode ? 'hero-dark_dwsupm' : 'hero_gutctx'}.svg`} />
+        <img className="avatar" src={`${publicUrl}/assets/imgs/me.png`} alt="Avatar" />
+        <HeroIcon isDarkMode={darkMode} />
     </section>
 }

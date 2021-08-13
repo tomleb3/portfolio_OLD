@@ -12,10 +12,7 @@
         background-color: $clr-body-darkmode;
         > section {
             .menu-container {
-                background-color: $clr1-darkmode;
-            }
-            .hamburger-menu {
-                filter: invert(1);
+                background-color: $clr-secondary-darkmode;
             }
         }
     }
@@ -89,9 +86,6 @@
             }
             .hamburger-menu {
                 display: unset;
-                > img {
-                    height: 30px;
-                }
             }
             .menu-container .routes-container {
                 flex-direction: column;

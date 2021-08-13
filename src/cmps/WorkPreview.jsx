@@ -1,19 +1,22 @@
 import { useContext } from 'react'
 import { SettingsContext } from '../App'
 import { utilService } from '../services/utilService'
+import { AngularIcon } from './Icons/AngularIcon'
+import { JavascriptIcon } from './Icons/JavascriptIcon'
+import { ReactIcon } from './Icons/ReactIcon'
+import { VueIcon } from './Icons/VueIcon'
 
 const getFrameworkLogoUrl = frameworkName => {
 
-    const cloudinaryBaseUrl = process.env.REACT_APP_CLOUDINARY_BASE_URL
     switch (frameworkName) {
         case 'react':
-            return `${cloudinaryBaseUrl}/reactJS_cvqqdx.svg`
+            return <ReactIcon />
         case 'angular':
-            return `${cloudinaryBaseUrl}/angularJS_qxmjk9.svg`
+            return <AngularIcon />
         case 'vue':
-            return `${cloudinaryBaseUrl}/vueJS_hcujbj.svg`
+            return <VueIcon />
         default:
-            return `${cloudinaryBaseUrl}/JavaScript_qnyrge.svg`
+            return <JavascriptIcon />
     }
 }
 
@@ -33,7 +36,7 @@ export const WorkPreview = ({ work }) => {
     return <section className={`work-preview flex ${listView ? 'list-view' : 'grid-view'} ${darkMode ? 'dark-mode' : ''}`}>
         <a className="img-container" href={work.linkUrl} target="_blank" rel="noopener noreferrer">
             <img src={work.imgUrl} alt="Project" />
-            <img src="https://res.cloudinary.com/tomleb3/image/upload/v1614444043/portfolio/eye_dsatza.svg" alt="View" />
+            <img src={`${process.env.PUBLIC_URL}/assets/imgs/eye.svg`} alt="View" />
             {work.inDevelopment && <div>In development</div>}
         </a>
         <div className="work-info flex col grow j-between">
@@ -50,7 +53,7 @@ export const WorkPreview = ({ work }) => {
                         {tagsContainer}
                     </div>
                 </div>
-                <img src={getFrameworkLogoUrl(work.framework)} alt="" />
+                {getFrameworkLogoUrl(work.framework)}
             </div>
             <footer className="flex j-between">
                 {tagsContainer}

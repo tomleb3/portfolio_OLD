@@ -11,6 +11,7 @@ html {
 body {
     overflow-x: hidden;
     font-family: open-sans;
+    color: $clr-txt;
     background-color: $clr-body;
 
     button {
@@ -23,7 +24,7 @@ body {
 
     input,
     textarea {
-        caret-color: $clr1;
+        caret-color: $clr-logo;
     }
 
     a {
@@ -36,8 +37,8 @@ body {
     }
 
     &.dark-mode {
+        color: $clr-txt-darkmode;
         background-color: $clr-body-darkmode;
-        color: whitesmoke;
     }
 
     &::-webkit-scrollbar {

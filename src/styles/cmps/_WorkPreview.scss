@@ -80,10 +80,6 @@
     }
     .work-info {
         padding: 1rem;
-        img {
-            width: 50px;
-            height: 50px;
-        }
         .info-container {
             * {
                 margin-block-end: 7px;
@@ -97,7 +93,7 @@
             > div > a {
                 width: fit-content;
                 margin-inline-end: 10px;
-                color: $clr2;
+                color: $clr-main;
             }
             .tags-container {
                 display: none;
@@ -113,7 +109,7 @@
         }
         footer {
             > a .btn-visit {
-                background-color: $clr1;
+                background-color: $clr-logo;
                 margin-block-start: 5px;
                 padding: 0.5rem 2rem;
                 border: none;
@@ -182,7 +178,7 @@
         }
         &.dark-mode {
             .work-info .info-container > div > input[type="checkbox"]:checked + .tags-container {
-                background-color: $clr1-darkmode;
+                background-color: $clr-secondary-darkmode;
             }
         }
     }

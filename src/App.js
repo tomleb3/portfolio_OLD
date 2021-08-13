@@ -29,7 +29,7 @@ export function App() {
 
   useEffect(() => {
     saveToStorage(STORAGE_KEY, settings)
-  }, [settings])
+  }, [settings, saveToStorage])
 
   return (
     <main className="App">
