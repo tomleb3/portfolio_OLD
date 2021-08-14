@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { useContext } from "react"
 import { SettingsContext } from '../App'
 import { UserSettings } from './UserSettings'
-import { HamburgerMenu } from './Icons/HamburgerMenu'
+import { HamburgerIcon } from './Icons/HamburgerIcon'
 
 export const AppHeader = () => {
 
@@ -48,10 +48,10 @@ export const AppHeader = () => {
             </NavLink>
             <nav className="flex a-center">
                 {routeLinks}
-                <button onClick={toggleMenu}>⚙️</button>
+                <button name="menu" onClick={toggleMenu}>⚙️</button>
             </nav>
-            <button className="hamburger-menu d-none" onClick={toggleMenu}>
-                <HamburgerMenu isDarkMode={darkMode} />
+            <button name="menu" className="hamburger-menu d-none" onClick={toggleMenu}>
+                <HamburgerIcon isDarkMode={darkMode} />
             </button>
             <div className={`menu-container ${menu ? '' : 'd-none'}`}>
                 {routeLinks}

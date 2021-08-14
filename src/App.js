@@ -16,6 +16,7 @@ export function App() {
 
   const settingsFromStorage = loadFromStorage(STORAGE_KEY)
   const [settings, setSettings] = useState(settingsFromStorage || {})
+  const [isOffline, setIsOffline] = useState(false)
   
   settings.darkMode ?
     document.body.classList.add('dark-mode')
@@ -31,10 +32,28 @@ export function App() {
     saveToStorage(STORAGE_KEY, settings)
   }, [settings, saveToStorage])
 
+  const onOnline = () => setIsOffline(false)
+  const onOffline = () => setIsOffline(true)
+
+  useEffect(() => {
+    window.addEventListener('online', onOnline)
+    window.addEventListener('offline', onOffline)
+    return () => {
+      window.removeEventListener('online', onOnline)
+      window.removeEventListener('offline', onOffline)
+    }
+  }, [])
+
   return (
     <main className="App">
       <SettingsContext.Provider value={{ settings, themeChange, viewChange }}>
         <AppHeader />
+        {isOffline && (
+          <div className="offline-indicator">
+            You are currently offline.
+            Some of the features may not work as intended.
+          </div>
+        )}
         <Switch>
           <Route path="/contact/" component={Contact} />
           <Route path="/resume/" component={Resume} />

@@ -36,6 +36,19 @@ body {
         resize: none;
     }
 
+    .offline-indicator {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 0.9em;
+        font-weight: bold;
+        color: $clr-txt-darkmode;
+        background-color: red;
+        text-align: center;
+        padding: 0.2rem;
+    }
+
     &.dark-mode {
         color: $clr-txt-darkmode;
         background-color: $clr-body-darkmode;
