@@ -15,7 +15,10 @@ export function App() {
   const { loadFromStorage, saveToStorage } = utilService
 
   const settingsFromStorage = loadFromStorage(STORAGE_KEY)
-  const [settings, setSettings] = useState(settingsFromStorage || {})
+  const [settings, setSettings] = useState(settingsFromStorage || {
+    darkMode: window.matchMedia('(prefers-color-scheme: dark)').matches,
+    listView: false,
+  })
   const [isOffline, setIsOffline] = useState(false)
   
   settings.darkMode ?
