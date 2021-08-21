@@ -20,7 +20,7 @@ export function App() {
     listView: false,
   })
   const [isOffline, setIsOffline] = useState(false)
-  
+
   settings.darkMode ?
     document.body.classList.add('dark-mode')
     : document.body.classList.remove('dark-mode')
@@ -49,14 +49,14 @@ export function App() {
 
   return (
     <main className="App">
+      {isOffline && (
+        <div className="offline-indicator">
+          You are currently offline.
+          Some of the features may not work as intended.
+        </div>
+      )}
       <SettingsContext.Provider value={{ settings, themeChange, viewChange }}>
         <AppHeader />
-        {isOffline && (
-          <div className="offline-indicator">
-            You are currently offline.
-            Some of the features may not work as intended.
-          </div>
-        )}
         <Switch>
           <Route path="/contact/" component={Contact} />
           <Route path="/resume/" component={Resume} />

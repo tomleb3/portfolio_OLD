@@ -3,10 +3,10 @@
     background: linear-gradient(0deg, $clr-body 0%, $clr-main 100%);
 
     &.dark-mode {
-        background: rgb(51,51,51);
+        background: $clr-body-darkmode;
         background: linear-gradient(0deg, $clr-body-darkmode 0%, $clr-main-darkmode 100%);
     }
-    
+
     .content {
         padding: 4rem 1.5rem 16rem;
         text-align: center;
