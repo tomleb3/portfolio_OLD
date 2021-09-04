@@ -5,8 +5,8 @@ export const UserSettings = () => {
 
     const { settings, themeChange, viewChange } = useContext(SettingsContext)
     const { darkMode, listView } = settings
-    const clickUrl = `${process.env.PUBLIC_URL}/assets/sounds/click.mp3`
-    let audio = new Audio(clickUrl)
+    const clickSoundUrl = `${process.env.PUBLIC_URL}/assets/sounds/click.mp3`
+    let audio = new Audio(clickSoundUrl)
 
     const onChangeTheme = darkMode => {
         audio.play()

@@ -54,9 +54,9 @@ export const AppHeader = () => {
                 <HamburgerIcon isDarkMode={darkMode} />
             </button>
             <div className={`menu-container ${menu ? '' : 'd-none'}`}>
+                <div className="dialog-bubble"></div>
                 {routeLinks}
                 <UserSettings />
-                <div className="dialog-bubble"></div>
                 <div className="dialog-background" onClick={closeMenu}></div>
             </div>
         </section>
