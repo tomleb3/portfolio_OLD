@@ -10,7 +10,7 @@ export const ContactCTA = () => {
     return <section className={`contact-cta main-layout flex j-around a-center ${darkMode ? 'dark-mode' : ''}`}>
         <strong>Got any questions for me?</strong>
         <p>Feel free to send me a message regarding anything and everything</p>
-        <Link to="/contact">
+        <Link name="Contact Me" to="/contact">
             <button>Contact Me</button>
         </Link>
     </section >

@@ -7,13 +7,13 @@ export const AppFooter = () => {
     return <footer className="app-footer">
         <div className="content main-layout flex col j-center a-center">
             <div className="social-container">
-                <a href="https://www.linkedin.com/in/tomleb/" target="_blank" rel="noopener noreferrer">
+                <a name="My Linkedin profile" href="https://www.linkedin.com/in/tomleb/" target="_blank" rel="noopener noreferrer">
                     <LinkedinIcon />
                 </a>
-                <a href="https://www.facebook.com/tomleb3/" target="_blank" rel="noopener noreferrer">
+                <a name="My Facebook profile" href="https://www.facebook.com/tomleb3/" target="_blank" rel="noopener noreferrer">
                     <FacebookIcon />
                 </a>
-                <a href="https://www.github.com/tomleb3" target="_blank" rel="noopener noreferrer">
+                <a name="My Github page" href="https://www.github.com/tomleb3" target="_blank" rel="noopener noreferrer">
                     <GithubIcon />
                 </a>
             </div>

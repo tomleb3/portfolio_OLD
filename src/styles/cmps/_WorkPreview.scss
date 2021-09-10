@@ -5,6 +5,9 @@
         .img-container > img:last-of-type {
             filter: invert(1);
         }
+        .work-info .info-container > div > a {
+            color: $clr-main-darkmode;
+        }
     }
     &.grid-view {
         flex-direction: column;

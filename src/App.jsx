@@ -61,6 +61,7 @@ export function App() {
           <Route path="/contact/" component={Contact} />
           <Route path="/resume/" component={Resume} />
           <Route path="/" component={Home} />
+          <Route component={Home} />
         </Switch>
         <AppFooter />
       </SettingsContext.Provider>

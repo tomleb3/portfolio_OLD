@@ -23,7 +23,7 @@ export const Hero = () => {
             </strong>
             <p>Designing and coding fully-fledged applications. Driven by passion</p>
         </div>
-        <img className="avatar" src={`${publicUrl}/assets/imgs/me.png`} alt="Avatar" />
+        <img className="avatar" src={`${publicUrl}/assets/imgs/me.webp`} alt="Me - Tom Leb" />
         <HeroIcon isDarkMode={darkMode} />
     </section>
 }

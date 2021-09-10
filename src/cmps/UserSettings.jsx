@@ -25,10 +25,10 @@ export const UserSettings = () => {
             <div className="theme-container flex j-between a-center">
                 <label>Theme</label>
                 <div className="flex a-center">
-                    <button className={darkMode ? 'inactive' : ''}
+                    <button name="Light" className={darkMode ? 'inactive' : ''}
                         onClick={() => onChangeTheme(false)}>☀️</button>
                     <div className="border"></div>
-                    <button className={darkMode ? '' : 'inactive'}
+                    <button name="Dark" className={darkMode ? '' : 'inactive'}
                         onClick={() => onChangeTheme(true)}>🌑</button>
                 </div>
             </div>

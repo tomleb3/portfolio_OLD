@@ -43,14 +43,14 @@ export const AppHeader = () => {
 
     return <header className={`app-header ${darkMode ? 'dark-mode' : ''}`} ref={headerRef}>
         <section className="main-layout flex j-between a-center">
-            <NavLink to="/" onClick={() => window.scrollTo({ top: 0 })}>
-                <img className="logo" src={`${process.env.PUBLIC_URL}/favicon.png`} alt="" />
+            <NavLink name="Home" to="/" onClick={() => window.scrollTo({ top: 0 })}>
+                <img className="logo" src={`${process.env.PUBLIC_URL}/favicon.webp`} alt="Home" />
             </NavLink>
             <nav className="flex a-center">
                 {routeLinks}
-                <button name="menu" onClick={toggleMenu}>⚙️</button>
+                <button name="Menu" onClick={toggleMenu}>⚙️</button>
             </nav>
-            <button name="menu" className="hamburger-menu d-none" onClick={toggleMenu}>
+            <button name="Menu" className="hamburger-menu d-none" onClick={toggleMenu}>
                 <HamburgerIcon isDarkMode={darkMode} />
             </button>
             <div className={`menu-container ${menu ? '' : 'd-none'}`}>

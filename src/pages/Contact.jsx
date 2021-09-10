@@ -97,7 +97,7 @@ export const Contact = () => {
             <label htmlFor="message">Message</label>
             <textarea name="message" value={message} onChange={handleChange} />
         </div>
-        <button className={isSubmitting ? 'btn-submit submitting' : 'btn-submit'} type="submit">Submit</button>
+        <button className={`btn-submit ${isSubmitting ? 'submitting' : ''}`} type="submit">Submit</button>
         <ToastContainer />
         <PersonalInfo />
     </form>
