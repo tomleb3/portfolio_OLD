@@ -44,7 +44,7 @@ export const AppHeader = () => {
     return <header className={`app-header ${darkMode ? 'dark-mode' : ''}`} ref={headerRef}>
         <section className="main-layout flex j-between a-center">
             <NavLink name="Home" to="/" onClick={() => window.scrollTo({ top: 0 })}>
-                <img className="logo" src={`${process.env.PUBLIC_URL}/favicon.webp`} alt="Home" />
+                <img className="logo" src={`${process.env.PUBLIC_URL}/favicon.png`} alt="Home" />
             </NavLink>
             <nav className="flex a-center">
                 {routeLinks}

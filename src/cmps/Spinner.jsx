@@ -1,6 +1,6 @@
 export const Spinner = () => {
 
-    return <div class="spinner-ripple">
+    return <div className="spinner-ripple">
         <div></div>
         <div></div>
     </div>

@@ -11,6 +11,8 @@ export const SettingsContext = createContext(null)
 
 export function App() {
 
+  const DARK_MODE_CLASSNAME = 'dark-mode'
+  const OFFLINE_CLASSNAME = 'offline'
   const STORAGE_KEY = 'user-settings'
   const { loadFromStorage, saveToStorage } = utilService
 
@@ -21,10 +23,6 @@ export function App() {
   })
   const [isOffline, setIsOffline] = useState(false)
 
-  settings.darkMode ?
-    document.body.classList.add('dark-mode')
-    : document.body.classList.remove('dark-mode')
-
   const themeChange = darkMode =>
     setSettings({ ...settings, darkMode })
 
@@ -33,10 +31,19 @@ export function App() {
 
   useEffect(() => {
     saveToStorage(STORAGE_KEY, settings)
+    settings.darkMode ?
+      document.body.classList.add(DARK_MODE_CLASSNAME)
+      : document.body.classList.remove(DARK_MODE_CLASSNAME)
   }, [settings, saveToStorage])
 
-  const onOnline = () => setIsOffline(false)
-  const onOffline = () => setIsOffline(true)
+  const onOnline = () => {
+    setIsOffline(false)
+    document.body.classList.remove(OFFLINE_CLASSNAME)
+  }
+  const onOffline = () => {
+    setIsOffline(true)
+    document.body.classList.add(OFFLINE_CLASSNAME)
+  }
 
   useEffect(() => {
     window.addEventListener('online', onOnline)
