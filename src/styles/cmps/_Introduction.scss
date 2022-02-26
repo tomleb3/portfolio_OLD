@@ -1,27 +1,31 @@
 .introduction {
-    background: $clr-main;
-    background: linear-gradient(0deg, $clr-body 0%, $clr-main 100%);
+  background: $clr-main;
+  background: linear-gradient(0deg, $clr-body 0%, $clr-main 100%);
 
-    &.dark-mode {
-        background: $clr-body-darkmode;
-        background: linear-gradient(0deg, $clr-body-darkmode 0%, $clr-main-darkmode 100%);
+  &.dark-mode {
+    background: $clr-body-darkmode;
+    background: linear-gradient(
+      0deg,
+      $clr-body-darkmode 0%,
+      $clr-main-darkmode 100%
+    );
+  }
+
+  .content {
+    padding: 4rem 1.5rem 16rem;
+    text-align: center;
+    color: white;
+    h3 {
+      font-size: 2em;
+      margin-block-end: 1.5rem;
+    }
+    p {
+      font-size: 1.25rem;
+      font-weight: 300;
     }
 
-    .content {
-        padding: 4rem 1.5rem 16rem;
-        text-align: center;
-        color: white;
-        h3 {
-            font-size: 2em;
-            margin-block-end: 1.5rem;
-        }
-        p {
-            font-size: 1.25rem;
-            font-weight: 300;
-        }
-
-        @media (max-width: $narrow-breakpoint) {
-            padding: 2rem 1.5rem 12rem;
-        }
+    @media (max-width: $narrow-breakpoint) {
+      padding: 2rem 1.5rem 12rem;
     }
+  }
 }

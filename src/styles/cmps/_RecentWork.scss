@@ -1,21 +1,21 @@
 .recent-work {
-    padding: 8rem 1rem 0;
-    & > {
-        strong,
-        p {
-            font-weight: 300;
-            margin-block-end: 1.5rem;
-            display: block;
-        }
-        strong {
-            font-size: 2em;
-        }
-        p {
-            font-size: 1.25em;
-        }
+  padding: 8rem 1rem 0;
+  & > {
+    strong,
+    p {
+      font-weight: 300;
+      margin-block-end: 1.5rem;
+      display: block;
     }
-    @media (max-width: $mobile-breakpoint) {
-        max-width: 100%;
-        padding: 5rem 1rem 0;
+    strong {
+      font-size: 2em;
     }
+    p {
+      font-size: 1.25em;
+    }
+  }
+  @media (max-width: $mobile-breakpoint) {
+    max-width: 100%;
+    padding: 5rem 1rem 0;
+  }
 }

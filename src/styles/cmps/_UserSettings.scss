@@ -1,39 +1,39 @@
 .user-settings {
-    > * {
-        width: 100%;
+  > * {
+    width: 100%;
+  }
+  label {
+    font-weight: 300;
+  }
+  header span {
+    margin-inline-end: 5px;
+  }
+  &.dark-mode {
+    .settings-container > div button {
+      color: whitesmoke;
     }
-    label {
-        font-weight: 300;
-    }
-    header span {
-        margin-inline-end: 5px;
-    }
-    &.dark-mode {
-        .settings-container > div button {
-            color: whitesmoke;
+  }
+  .settings-container {
+    padding: 0.7rem;
+    > div {
+      label {
+        color: #a5a5a5;
+      }
+      button {
+        font-size: 1.2em;
+        &.inactive {
+          opacity: 0.35;
         }
+      }
+      div.border {
+        height: 25px;
+        width: 2px;
+        background-color: lightgray;
+        margin: 0 12px;
+      }
+      &:not(:last-of-type) {
+        margin-block-end: 10px;
+      }
     }
-    .settings-container {
-        padding: 0.7rem;
-        > div {
-            label {
-                color: #a5a5a5;
-            }
-            button {
-                font-size: 1.2em;
-                &.inactive {
-                    opacity: 0.35;
-                }
-            }
-            div.border {
-                height: 25px;
-                width: 2px;
-                background-color: lightgray;
-                margin: 0 12px;
-            }
-            &:not(:last-of-type) {
-                margin-block-end: 10px;
-            }
-        }
-    }
+  }
 }

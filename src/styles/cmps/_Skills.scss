@@ -1,49 +1,49 @@
 .skills {
-    border-radius: 12px;
-    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
-    margin-block-start: -9rem;
-    background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+  margin-block-start: -9rem;
+  background-color: white;
 
-    &.dark-mode {
-        background-color: $clr-secondary-darkmode;
-        > div > label {
-            color: $clr-main-darkmode;
-        }
+  &.dark-mode {
+    background-color: $clr-secondary-darkmode;
+    > div > label {
+      color: $clr-main-darkmode;
     }
+  }
 
+  > div {
+    width: 33.3%;
+    min-height: 30rem;
+    text-align: center;
+    padding: 70px 45px;
+    &:not(:last-of-type) {
+      border-right: 1px solid #e6ecf8;
+    }
+    > strong {
+      margin: 2rem 0;
+    }
+    > label {
+      color: $clr-main;
+      margin: 0.5rem 0;
+    }
+    > span {
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: $normal-breakpoint) {
+    flex-direction: column;
     > div {
-        width: 33.3%;
-        min-height: 30rem;
-        text-align: center;
-        padding: 70px 45px;
-        &:not(:last-of-type) {
-            border-right: 1px solid #e6ecf8;
-        }
-        > strong {
-            margin: 2rem 0;
-        }
-        > label {
-            color: $clr-main;
-            margin: 0.5rem 0;
-        }
-        > span {
-            font-size: 0.9em;
-        }
+      width: 100%;
+      min-height: 24rem;
+      padding: 35px 45px;
+      &:not(:last-of-type) {
+        border-right: none;
+        border-bottom: 1px solid #e6ecf8;
+      }
+      > strong {
+        margin: 1rem 0;
+      }
     }
-
-    @media (max-width: $normal-breakpoint) {
-        flex-direction: column;
-        > div {
-            width: 100%;
-            min-height: 24rem;
-            padding: 35px 45px;
-            &:not(:last-of-type) {
-                border-right: none;
-                border-bottom: 1px solid #e6ecf8;
-            }
-            > strong {
-                margin: 1rem 0;
-            }
-        }
-    }
+  }
 }

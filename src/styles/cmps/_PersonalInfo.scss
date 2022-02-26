@@ -1,25 +1,25 @@
 .personal-info {
-    border: 1px solid $clr-border;
-    padding: 2rem;
-    border-radius: 5px;
-    margin-block-end: 4rem;
-    img {
-        margin-inline-end: 10px;
+  border: 1px solid $clr-border;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-block-end: 4rem;
+  img {
+    margin-inline-end: 10px;
+  }
+  header {
+    margin-block-end: 30px;
+  }
+  label,
+  span {
+    word-break: break-all;
+  }
+  > main {
+    margin-inline-start: 25px;
+    > div:not(:last-of-type) {
+      margin-block-end: 15px;
     }
-    header {
-        margin-block-end: 30px;
-    }
-    label,
-    span {
-        word-break: break-all;
-    }
-    > main {
-        margin-inline-start: 25px;
-        > div:not(:last-of-type) {
-            margin-block-end: 15px;
-        }
-    }
-    @media (max-width: $mobile-breakpoint) {
-        padding: 1rem;
-    }
+  }
+  @media (max-width: $mobile-breakpoint) {
+    padding: 1rem;
+  }
 }

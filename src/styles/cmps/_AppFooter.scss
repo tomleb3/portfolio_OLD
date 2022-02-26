@@ -1,33 +1,33 @@
 .app-footer {
-    background-color: $clr-footer;
+  background-color: $clr-footer;
+  .content {
+    color: white;
+    height: 400px;
+    padding-block-start: 5rem;
+
+    .social-container {
+      margin-block-end: 1.5rem;
+      a {
+        &:not(:last-of-type) {
+          margin-inline-end: 25px;
+        }
+        .social-link {
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+    strong {
+      margin-block-end: 1rem;
+    }
+    small {
+      font-weight: 300;
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
     .content {
-        color: white;
-        height: 400px;
-        padding-block-start: 5rem;
-
-        .social-container {
-            margin-block-end: 1.5rem;
-            a {
-                &:not(:last-of-type) {
-                    margin-inline-end: 25px;
-                }
-                .social-link {
-                    height: 25px;
-                    width: 25px;
-                }
-            }
-        }
-        strong {
-            margin-block-end: 1rem;
-        }
-        small {
-            font-weight: 300;
-        }
+      padding-block-start: 11rem;
     }
-
-    @media (max-width: $mobile-breakpoint) {
-        .content {
-            padding-block-start: 11rem;
-        }
-    }
+  }
 }

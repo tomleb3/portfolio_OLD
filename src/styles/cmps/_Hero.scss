@@ -1,49 +1,50 @@
 .hero {
-    text-align: center;
-    height: 100vh;
-    * {
-        margin: 0 auto;
-    }
-    > div {
-        margin-block-start: 175px;
-    }
-    strong,
-    p {
-        margin-block-end: 1.5rem;
-        font-weight: 300;
-        display: block;
-    }
+  text-align: center;
+  height: 100vh;
+  * {
+    margin: 0 auto;
+  }
+  > div {
+    margin-block-start: 175px;
+  }
+  strong,
+  p {
+    margin-block-end: 1.5rem;
+    font-weight: 300;
+    display: block;
+  }
+  strong {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  .avatar {
+    width: 22vh;
+    margin: auto;
+    border-radius: 50%;
+  }
+  .hero-icon {
+    max-height: 16rem;
+  }
+
+  @media (max-width: $normal-breakpoint) {
     strong {
-        font-size: 3em;
+      font-size: 2.5em;
     }
     p {
-        font-size: 1.5em;
+      font-size: 1.25em;
+    }
+  }
+  @media (max-width: $narrow-breakpoint) {
+    strong {
+      font-size: 2em;
     }
     .avatar {
-        width: 22vh;
-        margin: auto;
+      width: 17vh;
     }
-    .hero-icon {
-        max-height: 16rem;
+    > div {
+      margin-block-start: 125px;
     }
-
-    @media (max-width: $normal-breakpoint) {
-        strong {
-            font-size: 2.5em;
-        }
-        p {
-            font-size: 1.25em;
-        }
-    }
-    @media (max-width: $narrow-breakpoint) {
-        strong {
-            font-size: 2em;
-        }
-        .avatar {
-            width: 17vh;
-        }
-        > div {
-            margin-block-start: 125px;
-        }
-    }
+  }
 }
