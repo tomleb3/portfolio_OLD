@@ -35,7 +35,7 @@ export const Hero = () => {
         </strong>
         <p>Designing and coding fully-fledged applications. Driven by passion</p>
       </div>
-      <img className='avatar' src={`${publicUrl}/assets/imgs/me.webp`} alt='Me - Tom Leb' />
+      <img className='avatar' src={`${publicUrl}/assets/imgs/avatar.webp`} alt='Goofy avatar' />
       <HeroIcon isDarkMode={isDarkMode} />
     </section>
   );

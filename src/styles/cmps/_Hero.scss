@@ -23,6 +23,7 @@
     width: 22vh;
     margin: auto;
     border-radius: 50%;
+    transition: 0.2s filter;
   }
   .hero-icon {
     max-height: 16rem;
@@ -39,9 +40,6 @@
   @media (max-width: $narrow-breakpoint) {
     strong {
       font-size: 2em;
-    }
-    .avatar {
-      width: 17vh;
     }
     > div {
       margin-block-start: 125px;

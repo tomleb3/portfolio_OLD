@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect } from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import { Hero } from '../cmps/Hero';
 import { Introduction } from '../cmps/Introduction';
@@ -31,11 +31,6 @@ export const Home = () => {
   const { theme } = useUserSettings();
   const isDarkMode: boolean = theme === Theme.Dark;
   let works: Work[] = workService.query();
-
-  useEffect(() => {
-    window.scrollTo({ top: 0 });
-    document.title = "Tom Leb's Portfolio";
-  }, []);
 
   return (
     <main className='home'>

@@ -35,11 +35,6 @@ export const Contact = () => {
   const [messageFields, setMessageFields] = useState<MessageFields>(blankMessageFields);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0 });
-  //   document.title = 'Tom Leb \u2022 Contact';
-  // }, []);
-
   const clearMsgFields = () => setMessageFields(blankMessageFields);
 
   // TODO: find right type.
