@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.c3a90683.css",
-    "main.js": "/static/js/main.f06cca32.js",
+    "main.css": "/static/css/main.4ab7eede.css",
+    "main.js": "/static/js/main.19d5b255.js",
     "static/js/761.03ae0525.chunk.js": "/static/js/761.03ae0525.chunk.js",
     "static/js/466.3ad15254.chunk.js": "/static/js/466.3ad15254.chunk.js",
     "static/js/489.77845056.chunk.js": "/static/js/489.77845056.chunk.js",
-    "static/js/905.971ae8d6.chunk.js": "/static/js/905.971ae8d6.chunk.js",
+    "static/js/905.5dfc1dfd.chunk.js": "/static/js/905.5dfc1dfd.chunk.js",
     "static/js/377.eccac86a.chunk.js": "/static/js/377.eccac86a.chunk.js",
     "static/media/Nunito-Regular.ttf": "/static/media/Nunito-Regular.e4eb7682710458841b10.ttf",
     "static/media/Nunito-Bold.ttf": "/static/media/Nunito-Bold.7ddd6722d49bf5270cf1.ttf",
@@ -15,16 +15,16 @@
     "static/media/OpenSans-Regular.ttf": "/static/media/OpenSans-Regular.1b0809d519837cb7aad3.ttf",
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
-    "main.c3a90683.css.map": "/static/css/main.c3a90683.css.map",
-    "main.f06cca32.js.map": "/static/js/main.f06cca32.js.map",
+    "main.4ab7eede.css.map": "/static/css/main.4ab7eede.css.map",
+    "main.19d5b255.js.map": "/static/js/main.19d5b255.js.map",
     "761.03ae0525.chunk.js.map": "/static/js/761.03ae0525.chunk.js.map",
     "466.3ad15254.chunk.js.map": "/static/js/466.3ad15254.chunk.js.map",
     "489.77845056.chunk.js.map": "/static/js/489.77845056.chunk.js.map",
-    "905.971ae8d6.chunk.js.map": "/static/js/905.971ae8d6.chunk.js.map",
+    "905.5dfc1dfd.chunk.js.map": "/static/js/905.5dfc1dfd.chunk.js.map",
     "377.eccac86a.chunk.js.map": "/static/js/377.eccac86a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3a90683.css",
-    "static/js/main.f06cca32.js"
+    "static/css/main.4ab7eede.css",
+    "static/js/main.19d5b255.js"
   ]
 }
