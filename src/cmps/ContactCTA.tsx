@@ -20,10 +20,7 @@ export const ContactCTA = () => {
     >
       <strong>Got any questions for me?</strong>
       <p>Feel free to send me a message regarding anything and everything</p>
-      {/* TODO: remove button */}
-      <Link to='/contact'>
-        <button>Contact Me</button>
-      </Link>
+      <Link to='/contact'>Contact Me</Link>
     </section>
   );
 };

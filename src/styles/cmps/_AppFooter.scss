@@ -7,13 +7,13 @@
 
     .social-container {
       margin-block-end: 1.5rem;
-      a {
-        &:not(:last-of-type) {
-          margin-inline-end: 25px;
-        }
-        .social-link {
-          height: 25px;
-          width: 25px;
+      div {
+        a.social-link {
+          padding: 0.7em;
+          svg {
+            height: 25px;
+            width: 25px;
+          }
         }
       }
     }

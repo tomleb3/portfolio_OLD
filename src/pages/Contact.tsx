@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 
 import { PersonalInfo } from '../cmps/PersonalInfo';
 import emailjs from 'emailjs-com';
@@ -37,16 +37,14 @@ export const Contact = () => {
 
   const clearMsgFields = () => setMessageFields(blankMessageFields);
 
-  // TODO: find right type.
-  const handleChange = (ev: any) => {
+  const handleChange = (ev: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setMessageFields({
       ...messageFields,
       [ev.target.name]: ev.target.value,
     });
   };
 
-  // TODO: find right type.
-  const onSubmitForm = async (ev: any) => {
+  const onSubmitForm = async (ev: ChangeEvent<HTMLFormElement>) => {
     ev.preventDefault();
     const { REACT_APP_EMAILJS_SERVICEID, REACT_APP_EMAILJS_TEMPLATEID, REACT_APP_EMAILJS_USERID } =
       process.env;
