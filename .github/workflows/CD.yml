@@ -1,0 +1,16 @@
+name: CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@main
+        
+      - name: Deploy 🚀
+        run: npm run deploy
