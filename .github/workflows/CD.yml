@@ -13,5 +13,8 @@ jobs:
         uses: actions/checkout@main
         
       - name: Deploy 🚀
-        run: |
-          npm run deploy
+        uses: facebook/create-react-app@v5
+        with:
+            branch: gh-pages
+            folder: build
+            repositorty-name: tomleb3/portfolio
