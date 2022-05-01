@@ -13,4 +13,5 @@ jobs:
         uses: actions/checkout@main
         
       - name: Deploy 🚀
-        run: npm run deploy
+        run: |
+          npm run deploy
