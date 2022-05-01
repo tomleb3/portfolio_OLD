@@ -13,8 +13,8 @@ jobs:
         uses: actions/checkout@main
         
       - name: Deploy 🚀
-        uses: facebook/create-react-app@v5.0.1
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-            branch: gh-pages
-            folder: build
-            repositorty-name: tomleb3/portfolio
+          branch: gh-pages
+          folder: build
+          repositorty-name: tomleb3/portfolio
