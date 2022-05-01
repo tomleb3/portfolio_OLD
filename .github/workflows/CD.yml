@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@main
         
       - name: Deploy 🚀
-        uses: facebook/create-react-app@v5
+        uses: facebook/create-react-app@v5.0.1
         with:
             branch: gh-pages
             folder: build
