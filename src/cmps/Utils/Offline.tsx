@@ -1,37 +1,37 @@
 import { useState, useEffect } from 'react';
 
 export const Offline = ({
-  onOffline,
-  onOnline,
-  children,
+    onOffline,
+    onOnline,
+    children,
 }: {
-  onOffline?: () => void;
-  onOnline?: () => void;
-  children: JSX.Element;
+    readonly onOffline?: () => void;
+    readonly onOnline?: () => void;
+    readonly children: JSX.Element;
 }) => {
-  const [isOffline, setIsOffline] = useState<boolean>(false);
+    const [isOffline, setIsOffline] = useState<boolean>(false);
 
-  const offline = () => {
-    if (onOffline !== undefined) {
-      onOffline();
-    }
-    setIsOffline(true);
-  };
-  const online = () => {
-    if (onOnline !== undefined) {
-      onOnline();
-    }
-    setIsOffline(false);
-  };
-
-  useEffect(() => {
-    window.addEventListener('online', online);
-    window.addEventListener('offline', offline);
-    return () => {
-      window.removeEventListener('online', online);
-      window.removeEventListener('offline', offline);
+    const offline = () => {
+        if (onOffline !== undefined) {
+            onOffline();
+        }
+        setIsOffline(true);
     };
-  }, []);
+    const online = () => {
+        if (onOnline !== undefined) {
+            onOnline();
+        }
+        setIsOffline(false);
+    };
 
-  return isOffline ? children : null;
+    useEffect(() => {
+        window.addEventListener('online', online);
+        window.addEventListener('offline', offline);
+        return () => {
+            window.removeEventListener('online', online);
+            window.removeEventListener('offline', offline);
+        };
+    }, []);
+
+    return isOffline ? children : null;
 };

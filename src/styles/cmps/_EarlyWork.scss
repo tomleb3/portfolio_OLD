@@ -1,21 +1,21 @@
 .early-work {
-  padding: 9rem 1rem;
-  & > {
-    strong,
-    p {
-      font-weight: 300;
-      margin-block-end: 1.5rem;
-      display: block;
+    padding: 9rem 1rem;
+    & > {
+        strong,
+        p {
+            font-weight: 300;
+            margin-block-end: 1.5rem;
+            display: block;
+        }
+        strong {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.25em;
+        }
     }
-    strong {
-      font-size: 2em;
+    @media (max-width: $mobile-breakpoint) {
+        max-width: 100%;
+        padding: 7rem 1rem;
     }
-    p {
-      font-size: 1.25em;
-    }
-  }
-  @media (max-width: $mobile-breakpoint) {
-    max-width: 100%;
-    padding: 7rem 1rem;
-  }
 }

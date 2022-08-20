@@ -1,14 +1,10 @@
 .home {
-  .spinner-container {
-    padding: 5rem;
-    text-align: center;
-    background: linear-gradient(0deg, $clr-body 0%, $clr-main 100%);
-    &.dark-mode {
-      background: linear-gradient(
-        0deg,
-        $clr-body-darkmode 0%,
-        $clr-main-darkmode 100%
-      );
+    .spinner-container {
+        padding: 5rem;
+        text-align: center;
+        background: linear-gradient(0deg, $clr-body 0%, $clr-main 100%);
+        &.dark-mode {
+            background: linear-gradient(0deg, $clr-body-darkmode 0%, $clr-main-darkmode 100%);
+        }
     }
-  }
 }

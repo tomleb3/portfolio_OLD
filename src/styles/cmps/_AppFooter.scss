@@ -1,33 +1,47 @@
 .app-footer {
-  background-color: $clr-footer;
-  .content {
-    color: white;
-    height: 400px;
-    padding-block-start: 5rem;
-
-    .social-container {
-      margin-block-end: 1.5rem;
-      div {
-        a.social-link {
-          padding: 0.7em;
-          svg {
-            height: 25px;
-            width: 25px;
-          }
+    color: $clr-txt-darkmode;
+    background-color: $clr-footer;
+    &.dark-mode {
+        color: $clr-txt;
+        background-color: $clr-footer-darkmode;
+    }
+    .contact-cta {
+        &_title {
+            font-size: 2.5em;
         }
-      }
+        &_subtitle {
+            font-size: 1.5em;
+        }
+        &_link {
+            display: block;
+            font-size: 1.25em;
+            margin-top: 1rem;
+            font-weight: bold;
+            text-decoration: underline;
+        }
     }
-    strong {
-      margin-block-end: 1rem;
-    }
-    small {
-      font-weight: 300;
-    }
-  }
-
-  @media (max-width: $mobile-breakpoint) {
     .content {
-      padding-block-start: 11rem;
+        height: 400px;
+
+        .social-container {
+            .social-link {
+                padding: 0.7em;
+                svg {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+        }
+        small {
+            font-weight: 300;
+        }
     }
-  }
+
+    @media (max-width: $mobile-breakpoint) {
+        font-size: 12px;
+        .contact-cta_link {
+            font-size: 1.75em;
+            margin-top: 2rem;
+        }
+    }
 }
