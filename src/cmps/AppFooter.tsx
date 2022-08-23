@@ -74,7 +74,7 @@ export const AppFooter = () => {
                             </a>
                         </div>
                     </div>
-                    <strong className='m-clear'>&copy; 2021 | Tom Lebeodkin</strong>
+                    <strong className='m-clear'>&copy; {new Date().getFullYear()} | Tom Lebeodkin</strong>
                     <small>Powered by React</small>
                 </div>
             </div>
