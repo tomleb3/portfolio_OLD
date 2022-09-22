@@ -8,7 +8,7 @@ export const EarlyWork = ({ works }: { readonly works: readonly Work[] }) => {
 
     return (
         <section className='main-layout early-work'>
-            <strong>My earlier Works</strong>
+            <strong>Earlier Works</strong>
             <p>Also, a few projects from my beginnings</p>
             <WorkList works={earlyWorks} />
         </section>

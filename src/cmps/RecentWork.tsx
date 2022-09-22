@@ -8,7 +8,7 @@ export const RecentWork = ({ works }: { readonly works: readonly Work[] }) => {
 
     return (
         <section className='recent-work main-layout'>
-            <strong>My Recent Works</strong>
+            <strong>Recent Works</strong>
             <p>Here are a few projects I've worked on recently</p>
             <WorkList works={recentWorks} />
         </section>
