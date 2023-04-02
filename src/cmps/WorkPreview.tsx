@@ -8,7 +8,7 @@ import { ReactIcon } from './Icons/ReactIcon';
 import { VueIcon } from './Icons/VueIcon';
 import { Theme, useUserSettings, View } from '../services/userSettingsService';
 
-const getFrameworkLogoUrl = (frameworkName: string | undefined) => {
+const getFrameworkLogoUrl = (frameworkName: string | undefined): JSX.Element => {
     switch (frameworkName) {
         case 'react':
             return <ReactIcon />;
