@@ -55,7 +55,7 @@ export const AppFooter = () => {
                                 <GithubIcon />
                             </a>
                             <a
-                                aria-label='My Github page'
+                                aria-label='My StackOverflow page'
                                 href='https://stackoverflow.com/users/15169145/tomleb'
                                 target='_blank'
                                 rel='noopener noreferrer'
@@ -64,7 +64,7 @@ export const AppFooter = () => {
                                 <StackOverflowIcon />
                             </a>
                             <a
-                                aria-label='My Github page'
+                                aria-label='My NPM page'
                                 href='https://www.npmjs.com/~tomleb'
                                 target='_blank'
                                 rel='noopener noreferrer'
